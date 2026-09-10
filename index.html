@@ -62,8 +62,43 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
   <h1>Which Ontario sportsbook<br>is wrong right now?</h1>
   <p class="sub">We price every market against <b>five genuinely independent
   bookmaking engines</b> — then show you only the disagreements we can defend.</p>
-  <p class="stamp"><span class="dot"></span>Live data · built 2026-09-10 23:33 UTC ·
-  53,278 prices · 93 events · 5 independent engines</p>
+  <p class="stamp"><span class="dot"></span><b id="age">Live data</b> · built
+  2026-09-10 23:36 UTC · 54,357 prices · 93 events · 5 independent engines</p>
+  <script>
+  // A published page outlives its data. Odds move, and a stranger arriving
+  // hours later must not read a stale price as a live one. This ages the page
+  // in front of them and degrades the claim rather than quietly keeping it.
+  (function () {
+    var built = Date.parse("2026-09-10T23:36:23.141095+00:00");
+    function tick() {
+      var mins = Math.floor((Date.now() - built) / 60000);
+      var el = document.getElementById("age");
+      if (!el) return;
+      if (mins < 10) { el.textContent = "Live data"; el.style.color = ""; }
+      else if (mins < 60) {
+        el.textContent = "Prices " + mins + " min old";
+        el.style.color = "#ffb020";
+      } else {
+        var hrs = Math.floor(mins / 60);
+        el.textContent = "Prices " + hrs + "h old — treat as a sample, not live";
+        el.style.color = "#ff6b6b";
+        document.querySelectorAll(".op .edge span").forEach(function (e) {
+          e.style.color = "#8b97a5";
+        });
+      }
+    }
+    // The opportunity cards are parsed AFTER this script, which sits in the
+    // header. Running tick() immediately found #age but matched zero .edge
+    // spans, so the "grey out the edges" half silently did nothing. Wait for
+    // the document before the first run.
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", tick);
+    } else {
+      tick();
+    }
+    setInterval(tick, 30000);
+  })();
+  </script>
 </header>
 
 <section>
@@ -74,6 +109,30 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
   independent fair values, never the flattering one. Rows that fail the gate are
   not shown to you at all.</p>
   
+        <article class="op">
+          <header>
+            <div>
+              <p class="lg">NFL · total</p>
+              <h3>Over 54.5</h3>
+              <p class="ev-sub">San Francisco 49ers @ Los Angeles Rams</p>
+            </div>
+            <div class="edge"><span>+4.5%</span><small>edge</small></div>
+          </header>
+          <div class="grid">
+            <div><small>Best Ontario price</small><b>3.14</b><span>Pinnacle</span></div>
+            <div><small>Pinnacle fair</small><b>n/a</b><span>this IS the reference book</span></div>
+            <div><small>5-engine fair</small><b>3.00</b><span>excludes this book</span></div>
+            <div><small>Pinnacle risks</small><b>$50,000</b><span>on this market</span></div>
+            <div><small>Suggested stake</small><b>$21</b><span>on a $5,000 roll</span></div>
+          </div>
+          <footer>
+            <span class="badge ok">79/100 confidence</span>
+            <span class="badge">4 engines priced this line</span>
+            <span class="badge">no warnings</span>
+            <span class="badge ok">price re-checked at 23:36:14 UTC</span>
+            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $50,000 on this market</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (4.4% spread)</li><li>price observed 3 times</li><li>price is fresh (under 2 minutes old)</li></ul></details>
+          </footer>
+        </article>
         <article class="op">
           <header>
             <div>
@@ -94,7 +153,7 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
             <span class="badge ok">88/100 confidence</span>
             <span class="badge">5 engines priced this line</span>
             <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 23:33:40 UTC</span>
+            <span class="badge ok">price re-checked at 23:36:16 UTC</span>
             <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $30,000 on this market</li><li>all 5 independent engines price this exact market</li><li>fair value built from 4 engines excluding this book</li><li>engines broadly agree (4.4% spread)</li><li>Pinnacle and consensus agree this price is +EV</li><li>price is fresh (under 2 minutes old)</li></ul></details>
           </footer>
         </article>
@@ -102,24 +161,24 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
           <header>
             <div>
               <p class="lg">NFL · total</p>
-              <h3>Over 54.5</h3>
+              <h3>Over 50.5</h3>
               <p class="ev-sub">San Francisco 49ers @ Los Angeles Rams</p>
             </div>
-            <div class="edge"><span>+4.0%</span><small>edge</small></div>
+            <div class="edge"><span>+3.9%</span><small>edge</small></div>
           </header>
           <div class="grid">
-            <div><small>Best Ontario price</small><b>3.14</b><span>Pinnacle</span></div>
+            <div><small>Best Ontario price</small><b>2.39</b><span>Pinnacle</span></div>
             <div><small>Pinnacle fair</small><b>n/a</b><span>this IS the reference book</span></div>
-            <div><small>5-engine fair</small><b>3.02</b><span>excludes this book</span></div>
+            <div><small>5-engine fair</small><b>2.30</b><span>excludes this book</span></div>
             <div><small>Pinnacle risks</small><b>$50,000</b><span>on this market</span></div>
-            <div><small>Suggested stake</small><b>$18</b><span>on a $5,000 roll</span></div>
+            <div><small>Suggested stake</small><b>$28</b><span>on a $5,000 roll</span></div>
           </div>
           <footer>
             <span class="badge ok">79/100 confidence</span>
             <span class="badge">4 engines priced this line</span>
             <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 23:33:41 UTC</span>
-            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $50,000 on this market</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (4.4% spread)</li><li>price observed 3 times</li><li>price is fresh (under 2 minutes old)</li></ul></details>
+            <span class="badge ok">price re-checked at 23:36:17 UTC</span>
+            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $50,000 on this market</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (3.9% spread)</li><li>price observed 2 times</li><li>price is fresh (under 2 minutes old)</li></ul></details>
           </footer>
         </article>
         <article class="op">
@@ -142,32 +201,8 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
             <span class="badge ok">79/100 confidence</span>
             <span class="badge">4 engines priced this line</span>
             <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 23:33:44 UTC</span>
+            <span class="badge ok">price re-checked at 23:36:20 UTC</span>
             <details><summary>Why we trust this</summary><ul><li>Pinnacle limit $10,000</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (3.1% spread)</li><li>Pinnacle and consensus agree this price is +EV</li><li>price is fresh (under 2 minutes old)</li></ul></details>
-          </footer>
-        </article>
-        <article class="op">
-          <header>
-            <div>
-              <p class="lg">NFL · total</p>
-              <h3>Over 50.5</h3>
-              <p class="ev-sub">San Francisco 49ers @ Los Angeles Rams</p>
-            </div>
-            <div class="edge"><span>+3.3%</span><small>edge</small></div>
-          </header>
-          <div class="grid">
-            <div><small>Best Ontario price</small><b>2.39</b><span>Pinnacle</span></div>
-            <div><small>Pinnacle fair</small><b>n/a</b><span>this IS the reference book</span></div>
-            <div><small>5-engine fair</small><b>2.31</b><span>excludes this book</span></div>
-            <div><small>Pinnacle risks</small><b>$50,000</b><span>on this market</span></div>
-            <div><small>Suggested stake</small><b>$24</b><span>on a $5,000 roll</span></div>
-          </div>
-          <footer>
-            <span class="badge ok">79/100 confidence</span>
-            <span class="badge">4 engines priced this line</span>
-            <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 23:33:45 UTC</span>
-            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $50,000 on this market</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (4.1% spread)</li><li>price observed 2 times</li><li>price is fresh (under 2 minutes old)</li></ul></details>
           </footer>
         </article>
         <article class="op">
@@ -190,7 +225,7 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
             <span class="badge ok">84/100 confidence</span>
             <span class="badge">4 engines priced this line</span>
             <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 23:33:48 UTC</span>
+            <span class="badge ok">price re-checked at 23:36:22 UTC</span>
             <details><summary>Why we trust this</summary><ul><li>Pinnacle limit $10,000</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines cluster tightly (2.1% spread)</li><li>Pinnacle and consensus agree this price is +EV</li><li>price is fresh (under 2 minutes old)</li></ul></details>
           </footer>
         </article>
@@ -209,7 +244,7 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
   opinion wearing two logos. We count it once.</p>
 </section>
 
-<section><h2>One engine moves before another</h2><p class="lede">This is what an odds feed cannot give you. With five independent desks and a price history you can ask which desk <i>leads</i> — and prove it instead of assuming it. We tested every ordered pair; 12 of 14 failed the sample or significance bar and are not shown.</p><div class="cols"><div class="card"><h3>Pinnacle &rarr; BetMGM</h3><p class="price">76.1%<small> of the time the follower moves the same way</small></p><ul><li>median lag <b>85 seconds</b> — your window</li><li><b>88</b> paired moves on the same exact bet</li><li>leader moves <b>1.199%</b>, follower <b>1.401%</b></li><li>exact binomial <b>p = 0.0</b> vs a coin flip</li></ul></div><div class="card"><h3>BetRivers &rarr; DAZN Bet</h3><p class="price">77.3%<small> of the time the follower moves the same way</small></p><ul><li>median lag <b>514 seconds</b> — your window</li><li><b>44</b> paired moves on the same exact bet</li><li>leader moves <b>1.471%</b>, follower <b>0.738%</b></li><li>exact binomial <b>p = 0.00019</b> vs a coin flip</li></ul></div></div><p class="note">Scored on whether the follower moves the same direction, against a 50% baseline with an exact binomial test and a minimum of 20 paired moves. Counting who moved first gives the opposite answer and is wrong: a book that reprices constantly leads everything by construction. Measured over 76 minutes.</p></section>
+<section><h2>One engine moves before another</h2><p class="lede">This is what an odds feed cannot give you. With five independent desks and a price history you can ask which desk <i>leads</i> — and prove it instead of assuming it. We tested every ordered pair; 12 of 15 failed the sample or significance bar and are not shown.</p><div class="cols"><div class="card"><h3>NEO.bet &rarr; BetRivers</h3><p class="price">100.0%<small> of the time the follower moves the same way</small></p><ul><li>median lag <b>49 seconds</b> — your window</li><li><b>30</b> paired moves on the same exact bet</li><li>leader moves <b>1.276%</b>, follower <b>3.257%</b></li><li>exact binomial <b>p = 0.0</b> vs a coin flip</li></ul></div><div class="card"><h3>Pinnacle &rarr; BetMGM</h3><p class="price">71.7%<small> of the time the follower moves the same way</small></p><ul><li>median lag <b>85 seconds</b> — your window</li><li><b>106</b> paired moves on the same exact bet</li><li>leader moves <b>1.164%</b>, follower <b>1.347%</b></li><li>exact binomial <b>p = 0.0</b> vs a coin flip</li></ul></div><div class="card"><h3>BetRivers &rarr; DAZN Bet</h3><p class="price">77.3%<small> of the time the follower moves the same way</small></p><ul><li>median lag <b>514 seconds</b> — your window</li><li><b>44</b> paired moves on the same exact bet</li><li>leader moves <b>1.471%</b>, follower <b>0.738%</b></li><li>exact binomial <b>p = 0.00019</b> vs a coin flip</li></ul></div></div><p class="note">Scored on whether the follower moves the same direction, against a 50% baseline with an exact binomial test and a minimum of 20 paired moves. Counting who moved first gives the opposite answer and is wrong: a book that reprices constantly leads everything by construction. Measured over 79 minutes.</p></section>
 
 <section>
   <h2>What shopping is actually worth</h2>
