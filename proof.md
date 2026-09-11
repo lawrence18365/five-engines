@@ -1,13 +1,13 @@
 # Product proof report
-_Generated 2026-09-11 04:54 UTC from live data — last 24h_
+_Generated 2026-09-11 05:05 UTC from live data — last 24h_
 
 ## Collection health
-- collection runs: **618 total, 551 ok, 65 failed** (89% uptime)
-- prices collected: **86,174** across **95** events
-- snapshots: **1030** over **396 minutes** of observation
-  - DAZN Bet (altenar): 63 events, 26,204 prices
+- collection runs: **637 total, 567 ok, 69 failed** (89% uptime)
+- prices collected: **86,571** across **95** events
+- snapshots: **1051** over **406 minutes** of observation
+  - DAZN Bet (altenar): 63 events, 26,505 prices
   - BetMGM (entain): 17 events, 35,694 prices
-  - BetRivers (kambi): 58 events, 18,410 prices
+  - BetRivers (kambi): 58 events, 18,506 prices
   - NEO.bet (neo): 30 events, 2,222 prices
   - Pinnacle (pinnacle): 28 events, 3,644 prices
 
@@ -21,9 +21,9 @@ _Generated 2026-09-11 04:54 UTC from live data — last 24h_
   | betmgm vs neobet | 676 | 11.4% |
   | betmgm vs betrivers_on | 2,562 | 9.5% |
   | betrivers_on vs neobet | 742 | 8.5% |
-  | dazn_bet vs neobet | 500 | 2.4% |
+  | dazn_bet vs neobet | 500 | 2.2% |
   | betrivers_on vs dazn_bet | 1,824 | 2.2% |
-  | betmgm vs dazn_bet | 1,729 | 2.2% |
+  | betmgm vs dazn_bet | 1,729 | 2.1% |
   | betrivers_on vs pinnacle | 990 | 1.7% |
   | betmgm vs pinnacle | 832 | 0.7% |
   | dazn_bet vs pinnacle | 804 | 0.5% |
@@ -34,7 +34,7 @@ _Generated 2026-09-11 04:54 UTC from live data — last 24h_
 ## Consensus depth — how many engines actually price each market
   | market | exact markets | avg engines | 4 or more | only 2 |
   |---|---:|---:|---:|---:|
-  | total | 3,879 | 1.82 | 376 | 625 |
+  | total | 3,881 | 1.82 | 376 | 625 |
   | spread | 3,682 | 1.97 | 580 | 661 |
   | team_total | 2,820 | 1.24 | 18 | 308 |
   | moneyline | 218 | 1.94 | 30 | 84 |
@@ -42,8 +42,8 @@ _Generated 2026-09-11 04:54 UTC from live data — last 24h_
   Five engines collect, but they do not all price the same lines. NEO posts spreads far more than totals; Altenar posts few moneylines. Most individual markets are therefore covered by two or three engines, not five. The confidence score already penalises thin coverage, and this table is here so the headline number is never read as if every row had five opinions behind it.
 
 ## Lead / lag between engines — tested, and NOT supported
-- observed window: **397 minutes**, 1031 snapshots
-- unbiased (randomised collection order): **315 minutes**
+- observed window: **406 minutes**, 1051 snapshots
+- unbiased (randomised collection order): **327 minutes**
 
 We looked for the most commercially attractive signal five independent engines could offer: does one desk move before another? Early results looked excellent — two relationships at 77-79% same-direction with p-values under 0.001.
 
@@ -69,12 +69,12 @@ Collection order is now randomised every pass, and lead/lag is computed **only**
 We publish the rejections beside the survivor. A product built to find fake edges has no business hiding one of its own.
 
 ## What the gate rejected
-- opportunities detected: **442**
+- opportunities detected: **440**
 - passed clean (zero warnings): **71**
-- flagged or withheld: **371** (84% of everything found)
-- rated high confidence: **7**
+- flagged or withheld: **369** (84% of everything found)
+- rated high confidence: **9**
 - average quoted edge, clean rows: **1.01%**
-- average quoted edge, flagged rows: **6.00%**
+- average quoted edge, flagged rows: **6.03%**
 
   The flagged rows carry the *larger* average edge. That is the entire point: in this dataset the biggest number is usually the biggest bug, and a product that ranks on edge alone sells you its own defects.
 
@@ -87,15 +87,15 @@ We publish the rejections beside the survivor. A product built to find fake edge
 - largest: **Los Angeles Rams -14.00** — 3.62 worst vs **4.60** at BetMGM (**+26.9%**)
 
 ## Book movement (stale-line detection)
-- observed window: **396 minutes**, 1030 snapshots
+- observed window: **406 minutes**, 1051 snapshots
 
   | book | engine | active bets | repriced | held | stale % |
   |---|---|---:|---:|---:|---:|
-  | BetRivers | kambi | 2210 | 886 | 1324 | 59.9% |
-  | Pinnacle | pinnacle | 1153 | 477 | 676 | 58.6% |
+  | BetRivers | kambi | 2229 | 911 | 1318 | 59.1% |
+  | Pinnacle | pinnacle | 1160 | 477 | 683 | 58.9% |
   | NEO.bet | neo | 565 | 237 | 328 | 58.1% |
   | BetMGM | entain | 2644 | 1409 | 1235 | 46.7% |
-  | DAZN Bet | altenar | 1943 | 1618 | 325 | 16.7% |
+  | DAZN Bet | altenar | 1943 | 1619 | 324 | 16.7% |
 
 ## Closing-line value — the scoreboard we can be judged by
 
