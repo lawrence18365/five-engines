@@ -1,11 +1,11 @@
 # Product proof report
-_Generated 2026-09-11 02:34 UTC from live data — last 24h_
+_Generated 2026-09-11 02:46 UTC from live data — last 24h_
 
 ## Collection health
-- collection runs: **405 total, 381 ok, 22 failed** (94% uptime)
-- prices collected: **81,677** across **95** events
-- snapshots: **803** over **256 minutes** of observation
-  - DAZN Bet (altenar): 63 events, 22,023 prices
+- collection runs: **424 total, 396 ok, 26 failed** (93% uptime)
+- prices collected: **82,069** across **95** events
+- snapshots: **821** over **265 minutes** of observation
+  - DAZN Bet (altenar): 63 events, 22,415 prices
   - BetMGM (entain): 17 events, 35,694 prices
   - BetRivers (kambi): 57 events, 18,094 prices
   - NEO.bet (neo): 30 events, 2,222 prices
@@ -22,11 +22,11 @@ _Generated 2026-09-11 02:34 UTC from live data — last 24h_
   | betmgm vs betrivers_on | 2,562 | 9.5% |
   | betrivers_on vs neobet | 742 | 8.5% |
   | betmgm vs dazn_bet | 1,729 | 2.5% |
-  | betrivers_on vs dazn_bet | 1,790 | 2.3% |
-  | dazn_bet vs neobet | 500 | 2.2% |
+  | betrivers_on vs dazn_bet | 1,790 | 2.2% |
+  | dazn_bet vs neobet | 500 | 1.8% |
   | betrivers_on vs pinnacle | 944 | 1.7% |
-  | dazn_bet vs pinnacle | 804 | 0.9% |
   | betmgm vs pinnacle | 832 | 0.7% |
+  | dazn_bet vs pinnacle | 804 | 0.6% |
   | neobet vs pinnacle | 282 | 0.4% |
 
   A pair near 100% is one trading desk wearing two logos and is counted once.
@@ -42,8 +42,8 @@ _Generated 2026-09-11 02:34 UTC from live data — last 24h_
   Five engines collect, but they do not all price the same lines. NEO posts spreads far more than totals; Altenar posts few moneylines. Most individual markets are therefore covered by two or three engines, not five. The confidence score already penalises thin coverage, and this table is here so the headline number is never read as if every row had five opinions behind it.
 
 ## Lead / lag between engines — tested, and NOT supported
-- observed window: **256 minutes**, 803 snapshots
-- unbiased (randomised collection order): **175 minutes**
+- observed window: **269 minutes**, 825 snapshots
+- unbiased (randomised collection order): **187 minutes**
 
 We looked for the most commercially attractive signal five independent engines could offer: does one desk move before another? Early results looked excellent — two relationships at 77-79% same-direction with p-values under 0.001.
 
@@ -70,10 +70,10 @@ We publish the rejections beside the survivor. A product built to find fake edge
 
 ## What the gate rejected
 - opportunities detected: **433**
-- passed clean (zero warnings): **71**
-- flagged or withheld: **362** (84% of everything found)
+- passed clean (zero warnings): **70**
+- flagged or withheld: **363** (84% of everything found)
 - rated high confidence: **8**
-- average quoted edge, clean rows: **1.02%**
+- average quoted edge, clean rows: **1.03%**
 - average quoted edge, flagged rows: **5.76%**
 
   The flagged rows carry the *larger* average edge. That is the entire point: in this dataset the biggest number is usually the biggest bug, and a product that ranks on edge alone sells you its own defects.
@@ -87,15 +87,15 @@ We publish the rejections beside the survivor. A product built to find fake edge
 - largest: **Los Angeles Rams -14.00** — 3.62 worst vs **4.60** at BetMGM (**+26.9%**)
 
 ## Book movement (stale-line detection)
-- observed window: **256 minutes**, 803 snapshots
+- observed window: **265 minutes**, 821 snapshots
 
   | book | engine | active bets | repriced | held | stale % |
   |---|---|---:|---:|---:|---:|
-  | BetRivers | kambi | 2058 | 794 | 1264 | 61.4% |
-  | NEO.bet | neo | 552 | 237 | 315 | 57.1% |
-  | Pinnacle | pinnacle | 1075 | 477 | 598 | 55.6% |
-  | BetMGM | entain | 2580 | 1409 | 1171 | 45.4% |
-  | DAZN Bet | altenar | 1821 | 1403 | 418 | 23.0% |
+  | BetRivers | kambi | 2068 | 794 | 1274 | 61.6% |
+  | NEO.bet | neo | 556 | 237 | 319 | 57.4% |
+  | Pinnacle | pinnacle | 1081 | 477 | 604 | 55.9% |
+  | BetMGM | entain | 2590 | 1409 | 1181 | 45.6% |
+  | DAZN Bet | altenar | 1833 | 1417 | 416 | 22.7% |
 
 ## Closing-line value — the scoreboard we can be judged by
 
