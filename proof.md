@@ -1,11 +1,11 @@
 # Product proof report
-_Generated 2026-09-11 03:56 UTC from live data — last 24h_
+_Generated 2026-09-11 04:07 UTC from live data — last 24h_
 
 ## Collection health
-- collection runs: **530 total, 480 ok, 48 failed** (91% uptime)
-- prices collected: **84,219** across **95** events
-- snapshots: **925** over **336 minutes** of observation
-  - DAZN Bet (altenar): 63 events, 24,467 prices
+- collection runs: **547 total, 495 ok, 51 failed** (90% uptime)
+- prices collected: **84,726** across **95** events
+- snapshots: **948** over **349 minutes** of observation
+  - DAZN Bet (altenar): 63 events, 24,974 prices
   - BetMGM (entain): 17 events, 35,694 prices
   - BetRivers (kambi): 58 events, 18,192 prices
   - NEO.bet (neo): 30 events, 2,222 prices
@@ -21,8 +21,8 @@ _Generated 2026-09-11 03:56 UTC from live data — last 24h_
   | betmgm vs neobet | 676 | 11.4% |
   | betmgm vs betrivers_on | 2,562 | 9.5% |
   | betrivers_on vs neobet | 742 | 8.5% |
-  | betrivers_on vs dazn_bet | 1,796 | 2.3% |
-  | betmgm vs dazn_bet | 1,729 | 2.2% |
+  | betrivers_on vs dazn_bet | 1,796 | 2.4% |
+  | betmgm vs dazn_bet | 1,729 | 2.1% |
   | betrivers_on vs pinnacle | 960 | 1.8% |
   | dazn_bet vs neobet | 500 | 1.6% |
   | betmgm vs pinnacle | 832 | 0.7% |
@@ -42,8 +42,8 @@ _Generated 2026-09-11 03:56 UTC from live data — last 24h_
   Five engines collect, but they do not all price the same lines. NEO posts spreads far more than totals; Altenar posts few moneylines. Most individual markets are therefore covered by two or three engines, not five. The confidence score already penalises thin coverage, and this table is here so the headline number is never read as if every row had five opinions behind it.
 
 ## Lead / lag between engines — tested, and NOT supported
-- observed window: **339 minutes**, 928 snapshots
-- unbiased (randomised collection order): **257 minutes**
+- observed window: **349 minutes**, 948 snapshots
+- unbiased (randomised collection order): **268 minutes**
 
 We looked for the most commercially attractive signal five independent engines could offer: does one desk move before another? Early results looked excellent — two relationships at 77-79% same-direction with p-values under 0.001.
 
@@ -69,12 +69,12 @@ Collection order is now randomised every pass, and lead/lag is computed **only**
 We publish the rejections beside the survivor. A product built to find fake edges has no business hiding one of its own.
 
 ## What the gate rejected
-- opportunities detected: **434**
-- passed clean (zero warnings): **69**
-- flagged or withheld: **365** (84% of everything found)
-- rated high confidence: **8**
-- average quoted edge, clean rows: **1.04%**
-- average quoted edge, flagged rows: **5.75%**
+- opportunities detected: **428**
+- passed clean (zero warnings): **67**
+- flagged or withheld: **361** (84% of everything found)
+- rated high confidence: **6**
+- average quoted edge, clean rows: **1.05%**
+- average quoted edge, flagged rows: **5.80%**
 
   The flagged rows carry the *larger* average edge. That is the entire point: in this dataset the biggest number is usually the biggest bug, and a product that ranks on edge alone sells you its own defects.
 
@@ -87,15 +87,15 @@ We publish the rejections beside the survivor. A product built to find fake edge
 - largest: **Los Angeles Rams -14.00** — 3.62 worst vs **4.60** at BetMGM (**+26.9%**)
 
 ## Book movement (stale-line detection)
-- observed window: **336 minutes**, 925 snapshots
+- observed window: **349 minutes**, 948 snapshots
 
   | book | engine | active bets | repriced | held | stale % |
   |---|---|---:|---:|---:|---:|
-  | BetRivers | kambi | 2126 | 814 | 1312 | 61.7% |
+  | BetRivers | kambi | 2128 | 814 | 1314 | 61.7% |
   | NEO.bet | neo | 560 | 237 | 323 | 57.7% |
-  | Pinnacle | pinnacle | 1106 | 477 | 629 | 56.9% |
-  | BetMGM | entain | 2632 | 1409 | 1223 | 46.5% |
-  | DAZN Bet | altenar | 1875 | 1537 | 338 | 18.0% |
+  | Pinnacle | pinnacle | 1108 | 477 | 631 | 56.9% |
+  | BetMGM | entain | 2638 | 1409 | 1229 | 46.6% |
+  | DAZN Bet | altenar | 1881 | 1563 | 318 | 16.9% |
 
 ## Closing-line value — the scoreboard we can be judged by
 
