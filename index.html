@@ -63,13 +63,13 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
   <p class="sub">We price every market against <b>five genuinely independent
   bookmaking engines</b> — then show you only the disagreements we can defend.</p>
   <p class="stamp"><span class="dot"></span><b id="age">Live data</b> · built
-  2026-09-11 00:37 UTC · 67,042 prices · 95 events · 5 independent engines</p>
+  2026-09-11 00:40 UTC · 67,637 prices · 95 events · 5 independent engines</p>
   <script>
   // A published page outlives its data. Odds move, and a stranger arriving
   // hours later must not read a stale price as a live one. This ages the page
   // in front of them and degrades the claim rather than quietly keeping it.
   (function () {
-    var built = Date.parse("2026-09-11T00:37:12.167551+00:00");
+    var built = Date.parse("2026-09-11T00:40:31.514238+00:00");
     function tick() {
       var mins = Math.floor((Date.now() - built) / 60000);
       var el = document.getElementById("age");
@@ -103,60 +103,12 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
 
 <section>
   <h2>5 opportunities we'd stand behind right now</h2>
-  <p class="lede">Each price below was re-checked against the sportsbook's own API at build time. 5 of 5 candidates confirmed. Every row also passed the same gate: priced by
+  <p class="lede">Each price below was re-checked against the sportsbook's own API at build time. 5 of 10 candidates confirmed; 5 had already moved or been pulled and are not shown. Every row also passed the same gate: priced by
   multiple independent engines, corroborated by Pinnacle's own stake limits, zero
   data-quality warnings. The edge quoted is the <b>more conservative</b> of our two
   independent fair values, never the flattering one. Rows that fail the gate are
   not shown to you at all.</p>
   
-        <article class="op">
-          <header>
-            <div>
-              <p class="lg">NFL · total</p>
-              <h3>Over 54.5</h3>
-              <p class="ev-sub">San Francisco 49ers @ Los Angeles Rams</p>
-            </div>
-            <div class="edge"><span>+4.8%</span><small>edge</small></div>
-          </header>
-          <div class="grid">
-            <div><small>Best Ontario price</small><b>3.17</b><span>Pinnacle</span></div>
-            <div><small>Pinnacle fair</small><b>n/a</b><span>this IS the reference book</span></div>
-            <div><small>5-engine fair</small><b>3.02</b><span>excludes this book</span></div>
-            <div><small>Pinnacle risks</small><b>$50,000</b><span>on this market</span></div>
-            <div><small>Suggested stake</small><b>$21</b><span>on a $5,000 roll</span></div>
-          </div>
-          <footer>
-            <span class="badge ok">76/100 confidence</span>
-            <span class="badge">4 engines priced this line</span>
-            <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 00:37:04 UTC</span>
-            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $50,000 on this market</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (4.9% spread)</li><li>price is fresh (under 2 minutes old)</li></ul></details>
-          </footer>
-        </article>
-        <article class="op">
-          <header>
-            <div>
-              <p class="lg">NFL · total</p>
-              <h3>Over 50.5</h3>
-              <p class="ev-sub">San Francisco 49ers @ Los Angeles Rams</p>
-            </div>
-            <div class="edge"><span>+4.4%</span><small>edge</small></div>
-          </header>
-          <div class="grid">
-            <div><small>Best Ontario price</small><b>2.41</b><span>Pinnacle</span></div>
-            <div><small>Pinnacle fair</small><b>n/a</b><span>this IS the reference book</span></div>
-            <div><small>5-engine fair</small><b>2.31</b><span>excludes this book</span></div>
-            <div><small>Pinnacle risks</small><b>$50,000</b><span>on this market</span></div>
-            <div><small>Suggested stake</small><b>$32</b><span>on a $5,000 roll</span></div>
-          </div>
-          <footer>
-            <span class="badge ok">83/100 confidence</span>
-            <span class="badge">4 engines priced this line</span>
-            <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 00:37:06 UTC</span>
-            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $50,000 on this market</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (4.7% spread)</li><li>price has held this level for 115 minutes</li><li>price is fresh (under 2 minutes old)</li></ul></details>
-          </footer>
-        </article>
         <article class="op">
           <header>
             <div>
@@ -171,14 +123,14 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
             <div><small>Pinnacle fair</small><b>3.50</b><span>sharp reference</span></div>
             <div><small>5-engine fair</small><b>3.60</b><span>excludes this book</span></div>
             <div><small>Pinnacle risks</small><b>$30,000</b><span>on this market</span></div>
-            <div><small>Suggested stake</small><b>$16</b><span>on a $5,000 roll</span></div>
+            <div><small>Suggested stake</small><b>$15</b><span>on a $5,000 roll</span></div>
           </div>
           <footer>
-            <span class="badge ok">88/100 confidence</span>
+            <span class="badge ok">83/100 confidence</span>
             <span class="badge">5 engines priced this line</span>
             <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 00:37:07 UTC</span>
-            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $30,000 on this market</li><li>all 5 independent engines price this exact market</li><li>fair value built from 4 engines excluding this book</li><li>engines broadly agree (4.4% spread)</li><li>Pinnacle and consensus agree this price is +EV</li><li>price is fresh (under 2 minutes old)</li></ul></details>
+            <span class="badge ok">price re-checked at 00:40:17 UTC</span>
+            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $30,000 on this market</li><li>all 5 independent engines price this exact market</li><li>fair value built from 4 engines excluding this book</li><li>engines broadly agree (4.4% spread)</li><li>Pinnacle and consensus agree this price is +EV</li><li>price is 2 minutes old</li></ul></details>
           </footer>
         </article>
         <article class="op">
@@ -195,38 +147,86 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
             <div><small>Pinnacle fair</small><b>3.96</b><span>sharp reference</span></div>
             <div><small>5-engine fair</small><b>3.96</b><span>excludes this book</span></div>
             <div><small>Pinnacle risks</small><b>$10,000</b><span>on this market</span></div>
-            <div><small>Suggested stake</small><b>$11</b><span>on a $5,000 roll</span></div>
+            <div><small>Suggested stake</small><b>$10</b><span>on a $5,000 roll</span></div>
           </div>
           <footer>
-            <span class="badge ok">79/100 confidence</span>
+            <span class="badge ok">74/100 confidence</span>
             <span class="badge">4 engines priced this line</span>
             <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 00:37:10 UTC</span>
-            <details><summary>Why we trust this</summary><ul><li>Pinnacle limit $10,000</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (3.1% spread)</li><li>Pinnacle and consensus agree this price is +EV</li><li>price is fresh (under 2 minutes old)</li></ul></details>
+            <span class="badge ok">price re-checked at 00:40:21 UTC</span>
+            <details><summary>Why we trust this</summary><ul><li>Pinnacle limit $10,000</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (3.1% spread)</li><li>Pinnacle and consensus agree this price is +EV</li><li>price is 3 minutes old</li></ul></details>
           </footer>
         </article>
         <article class="op">
           <header>
             <div>
-              <p class="lg">NFL · total</p>
-              <h3>Over 49.5</h3>
-              <p class="ev-sub">San Francisco 49ers @ Los Angeles Rams</p>
+              <p class="lg">NFL · moneyline</p>
+              <h3>Arizona Cardinals</h3>
+              <p class="ev-sub">Arizona Cardinals @ Los Angeles Chargers</p>
             </div>
-            <div class="edge"><span>+3.3%</span><small>edge</small></div>
+            <div class="edge"><span>+3.2%</span><small>edge</small></div>
           </header>
           <div class="grid">
-            <div><small>Best Ontario price</small><b>2.24</b><span>Pinnacle</span></div>
-            <div><small>Pinnacle fair</small><b>n/a</b><span>this IS the reference book</span></div>
-            <div><small>5-engine fair</small><b>2.17</b><span>excludes this book</span></div>
-            <div><small>Pinnacle risks</small><b>$50,000</b><span>on this market</span></div>
-            <div><small>Suggested stake</small><b>$27</b><span>on a $5,000 roll</span></div>
+            <div><small>Best Ontario price</small><b>5.00</b><span>BetMGM</span></div>
+            <div><small>Pinnacle fair</small><b>4.85</b><span>sharp reference</span></div>
+            <div><small>5-engine fair</small><b>4.82</b><span>excludes this book</span></div>
+            <div><small>Pinnacle risks</small><b>$10,000</b><span>on this market</span></div>
+            <div><small>Suggested stake</small><b>$8</b><span>on a $5,000 roll</span></div>
           </div>
           <footer>
-            <span class="badge ok">83/100 confidence</span>
+            <span class="badge ok">79/100 confidence</span>
             <span class="badge">4 engines priced this line</span>
             <span class="badge">no warnings</span>
-            <span class="badge ok">price re-checked at 00:37:11 UTC</span>
-            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $50,000 on this market</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (4.2% spread)</li><li>price has held this level for 115 minutes</li><li>price is fresh (under 2 minutes old)</li></ul></details>
+            <span class="badge ok">price re-checked at 00:40:26 UTC</span>
+            <details><summary>Why we trust this</summary><ul><li>Pinnacle limit $10,000</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines cluster tightly (2.1% spread)</li><li>Pinnacle and consensus agree this price is +EV</li><li>price is 3 minutes old</li></ul></details>
+          </footer>
+        </article>
+        <article class="op">
+          <header>
+            <div>
+              <p class="lg">NFL · spread</p>
+              <h3>Los Angeles Chargers -10.5</h3>
+              <p class="ev-sub">Arizona Cardinals @ Los Angeles Chargers</p>
+            </div>
+            <div class="edge"><span>+1.6%</span><small>edge</small></div>
+          </header>
+          <div class="grid">
+            <div><small>Best Ontario price</small><b>2.21</b><span>Pinnacle</span></div>
+            <div><small>Pinnacle fair</small><b>n/a</b><span>this IS the reference book</span></div>
+            <div><small>5-engine fair</small><b>2.18</b><span>excludes this book</span></div>
+            <div><small>Pinnacle risks</small><b>$30,000</b><span>on this market</span></div>
+            <div><small>Suggested stake</small><b>$12</b><span>on a $5,000 roll</span></div>
+          </div>
+          <footer>
+            <span class="badge ok">76/100 confidence</span>
+            <span class="badge">4 engines priced this line</span>
+            <span class="badge">no warnings</span>
+            <span class="badge ok">price re-checked at 00:40:28 UTC</span>
+            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $30,000 on this market</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines cluster tightly (2.6% spread)</li><li>price is 2 minutes old</li></ul></details>
+          </footer>
+        </article>
+        <article class="op">
+          <header>
+            <div>
+              <p class="lg">NFL · spread</p>
+              <h3>Arizona Cardinals +3.5</h3>
+              <p class="ev-sub">Arizona Cardinals @ Los Angeles Chargers</p>
+            </div>
+            <div class="edge"><span>+1.5%</span><small>edge</small></div>
+          </header>
+          <div class="grid">
+            <div><small>Best Ontario price</small><b>3.20</b><span>BetRivers</span></div>
+            <div><small>Pinnacle fair</small><b>3.06</b><span>sharp reference</span></div>
+            <div><small>5-engine fair</small><b>3.15</b><span>excludes this book</span></div>
+            <div><small>Pinnacle risks</small><b>$30,000</b><span>on this market</span></div>
+            <div><small>Suggested stake</small><b>$7</b><span>on a $5,000 roll</span></div>
+          </div>
+          <footer>
+            <span class="badge ok">78/100 confidence</span>
+            <span class="badge">4 engines priced this line</span>
+            <span class="badge">no warnings</span>
+            <span class="badge ok">price re-checked at 00:40:30 UTC</span>
+            <details><summary>Why we trust this</summary><ul><li>Pinnacle risks $30,000 on this market</li><li>4 of 5 engines price this exact market</li><li>fair value built from 3 engines excluding this book</li><li>engines broadly agree (3.2% spread)</li><li>Pinnacle and consensus agree this price is +EV</li><li>price is 2 minutes old</li></ul></details>
           </footer>
         </article>
 </section>
@@ -244,7 +244,7 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
   opinion wearing two logos. We count it once.</p>
 </section>
 
-
+<section><h2>One engine moves before another</h2><p class="lede">This is what an odds feed cannot give you. With five independent desks and a price history you can ask which desk <i>leads</i> — and prove it instead of assuming it. We tested every ordered pair; 8 of 9 failed the sample or significance bar and are not shown.</p><div class="cols"><div class="card"><h3>Pinnacle &rarr; BetMGM</h3><p class="price">65.7%<small> of the time the follower moves the same way</small></p><ul><li>median lag <b>610 seconds</b> — your window</li><li><b>70</b> paired moves on the same exact bet</li><li>leader moves <b>0.582%</b>, follower <b>2.849%</b></li><li>exact binomial <b>p = 0.00576</b> vs a coin flip</li></ul></div></div><p class="note">Scored on whether the follower moves the same direction, against a 50% baseline with an exact binomial test and a minimum of 20 paired moves, using only data collected after we randomised our own polling order. Counting who moved first gives the opposite answer and is wrong: a book that reprices constantly leads everything by construction. Rates move as samples grow. entain->altenar read 60.0% at n=160 and 53.8% at n=325 on the same unbiased data - regression to the mean, not a signal. Treat any relationship here as provisional until its sample is several hundred paired moves.</p></section>
 
 <section>
   <h2>What shopping is actually worth</h2>
@@ -258,7 +258,7 @@ footer.end{color:var(--dim);font-size:13px;padding:40px 0 60px;border-top:1px so
   <p class="lede">The honest case is not edge-chasing. It is that you are already
   placing bets, and taking the best of five independent prices instead of the
   middle one is worth <b>2.00%</b> on every one of them — measured right
-  now across 1,953 markets our engines both price.</p>
+  now across 1,955 markets our engines both price.</p>
   <table><thead><tr><th>You stake per month</th><th>Better prices are worth</th><th>vs C$59/mo</th></tr></thead>
   <tbody><tr><td>$1,000</td><td class='hi'>$20</td><td>partial</td></tr><tr><td>$2,000</td><td class='hi'>$40</td><td>partial</td></tr><tr><td>$5,000</td><td class='hi'>$100</td><td>covers it</td></tr><tr><td>$10,000</td><td class='hi'>$200</td><td>covers it</td></tr></tbody></table>
   <p class="note">Expected value, not a promise — variance on any individual bet
