@@ -1,19 +1,19 @@
 # Product proof report
-_Generated 2026-09-11 12:25 UTC from live data — last 24h_
+_Generated 2026-09-11 12:37 UTC from live data — last 24h_
 
 ## Collection health
-- collection runs: **1293 total, 1091 ok, 200 failed** (84% uptime)
-- prices collected: **113,192** across **99** events
-- snapshots: **2219** over **845 minutes** of observation
-  - DAZN Bet (altenar): 66 events, 41,858 prices
+- collection runs: **1310 total, 1104 ok, 204 failed** (84% uptime)
+- prices collected: **113,971** across **99** events
+- snapshots: **2260** over **859 minutes** of observation
+  - DAZN Bet (altenar): 66 events, 42,423 prices
   - BetMGM (entain): 17 events, 35,694 prices
-  - BetRivers (kambi): 61 events, 29,774 prices
+  - BetRivers (kambi): 61 events, 29,988 prices
   - NEO.bet (neo): 30 events, 2,222 prices
   - Pinnacle (pinnacle): 28 events, 3,644 prices
 
 ## Independence — the thing that makes the consensus mean anything
 - exact markets priced by **all 5** engines: **224**
-- exact markets priced by 2 or more engines: **4,394**
+- exact markets priced by 2 or more engines: **4,396**
 - measured pairwise price agreement (identical price on the same exact bet):
 
   | pair | shared markets | identical |
@@ -21,7 +21,7 @@ _Generated 2026-09-11 12:25 UTC from live data — last 24h_
   | betmgm vs neobet | 676 | 11.4% |
   | betmgm vs betrivers_on | 2,562 | 9.5% |
   | betrivers_on vs neobet | 742 | 8.5% |
-  | betrivers_on vs dazn_bet | 2,000 | 2.4% |
+  | betrivers_on vs dazn_bet | 2,002 | 2.3% |
   | betmgm vs dazn_bet | 1,733 | 2.3% |
   | dazn_bet vs neobet | 500 | 2.0% |
   | betrivers_on vs pinnacle | 1,138 | 1.8% |
@@ -34,7 +34,7 @@ _Generated 2026-09-11 12:25 UTC from live data — last 24h_
 ## Consensus depth — how many engines actually price each market
   | market | exact markets | avg engines | 4 or more | only 2 |
   |---|---:|---:|---:|---:|
-  | total | 4,205 | 1.80 | 376 | 695 |
+  | total | 4,207 | 1.80 | 376 | 697 |
   | spread | 3,832 | 1.95 | 580 | 733 |
   | team_total | 2,850 | 1.27 | 18 | 396 |
   | moneyline | 224 | 1.92 | 30 | 84 |
@@ -42,8 +42,8 @@ _Generated 2026-09-11 12:25 UTC from live data — last 24h_
   Five engines collect, but they do not all price the same lines. NEO posts spreads far more than totals; Altenar posts few moneylines. Most individual markets are therefore covered by two or three engines, not five. The confidence score already penalises thin coverage, and this table is here so the headline number is never read as if every row had five opinions behind it.
 
 ## Lead / lag between engines — tested, and NOT supported
-- observed window: **845 minutes**, 2219 snapshots
-- unbiased (randomised collection order): **766 minutes**
+- observed window: **859 minutes**, 2260 snapshots
+- unbiased (randomised collection order): **779 minutes**
 
 We looked for the most commercially attractive signal five independent engines could offer: does one desk move before another? Early results looked excellent — two relationships at 77-79% same-direction with p-values under 0.001.
 
@@ -55,7 +55,7 @@ Collection order is now randomised every pass, and lead/lag is computed **only**
 
   | pair | paired moves | same direction | verdict |
   |---|---:|---:|---|
-  | altenar → kambi | 10 | 100.0% | polling artifact |
+  | altenar → kambi | 13 | 76.9% | polling artifact |
   | entain → neo | 5 | 60.0% | polling artifact |
   | entain → altenar | 226 | 59.3% | weak |
   | pinnacle → entain | 32 | 56.3% | noise |
@@ -70,12 +70,12 @@ Collection order is now randomised every pass, and lead/lag is computed **only**
 We publish the rejections beside the survivor. A product built to find fake edges has no business hiding one of its own.
 
 ## What the gate rejected
-- opportunities detected: **524**
+- opportunities detected: **531**
 - passed clean (zero warnings): **71**
-- flagged or withheld: **453** (86% of everything found)
+- flagged or withheld: **460** (87% of everything found)
 - rated high confidence: **8**
 - average quoted edge, clean rows: **1.02%**
-- average quoted edge, flagged rows: **5.07%**
+- average quoted edge, flagged rows: **5.03%**
 
   The flagged rows carry the *larger* average edge. That is the entire point: in this dataset the biggest number is usually the biggest bug, and a product that ranks on edge alone sells you its own defects.
 
@@ -88,7 +88,7 @@ We publish the rejections beside the survivor. A product built to find fake edge
 - largest: **Los Angeles Rams -14.00** — 3.62 worst vs **4.60** at BetMGM (**+26.9%**)
 
 ## Book movement (stale-line detection)
-- observed window: **845 minutes**, 2219 snapshots
+- observed window: **859 minutes**, 2260 snapshots
 
   | book | engine | active bets | repriced | held | stale % |
   |---|---|---:|---:|---:|---:|
@@ -96,7 +96,7 @@ We publish the rejections beside the survivor. A product built to find fake edge
   | NEO.bet | neo | 609 | 237 | 372 | 61.1% |
   | BetMGM | entain | 2800 | 1409 | 1391 | 49.7% |
   | BetRivers | kambi | 3110 | 1657 | 1453 | 46.7% |
-  | DAZN Bet | altenar | 2276 | 2001 | 275 | 12.1% |
+  | DAZN Bet | altenar | 2278 | 2019 | 259 | 11.4% |
 
 ## Closing-line value — the scoreboard we can be judged by
 
