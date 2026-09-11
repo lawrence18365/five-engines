@@ -1,11 +1,11 @@
 # Product proof report
-_Generated 2026-09-11 02:11 UTC from live data — last 24h_
+_Generated 2026-09-11 02:23 UTC from live data — last 24h_
 
 ## Collection health
-- collection runs: **371 total, 353 ok, 16 failed** (95% uptime)
-- prices collected: **79,638** across **95** events
-- snapshots: **737** over **233 minutes** of observation
-  - DAZN Bet (altenar): 63 events, 20,002 prices
+- collection runs: **390 total, 368 ok, 20 failed** (94% uptime)
+- prices collected: **79,988** across **95** events
+- snapshots: **755** over **243 minutes** of observation
+  - DAZN Bet (altenar): 63 events, 20,352 prices
   - BetMGM (entain): 17 events, 35,694 prices
   - BetRivers (kambi): 56 events, 18,076 prices
   - NEO.bet (neo): 30 events, 2,222 prices
@@ -22,11 +22,11 @@ _Generated 2026-09-11 02:11 UTC from live data — last 24h_
   | betmgm vs betrivers_on | 2,562 | 9.5% |
   | betrivers_on vs neobet | 742 | 8.5% |
   | betmgm vs dazn_bet | 1,729 | 2.7% |
-  | dazn_bet vs neobet | 500 | 2.4% |
-  | betrivers_on vs dazn_bet | 1,790 | 1.9% |
+  | dazn_bet vs neobet | 500 | 2.2% |
+  | betrivers_on vs dazn_bet | 1,790 | 2.1% |
   | betrivers_on vs pinnacle | 928 | 1.6% |
+  | dazn_bet vs pinnacle | 804 | 1.0% |
   | betmgm vs pinnacle | 832 | 0.7% |
-  | dazn_bet vs pinnacle | 804 | 0.6% |
   | neobet vs pinnacle | 282 | 0.4% |
 
   A pair near 100% is one trading desk wearing two logos and is counted once.
@@ -42,8 +42,8 @@ _Generated 2026-09-11 02:11 UTC from live data — last 24h_
   Five engines collect, but they do not all price the same lines. NEO posts spreads far more than totals; Altenar posts few moneylines. Most individual markets are therefore covered by two or three engines, not five. The confidence score already penalises thin coverage, and this table is here so the headline number is never read as if every row had five opinions behind it.
 
 ## Lead / lag between engines — tested, and NOT supported
-- observed window: **233 minutes**, 737 snapshots
-- unbiased (randomised collection order): **152 minutes**
+- observed window: **246 minutes**, 760 snapshots
+- unbiased (randomised collection order): **164 minutes**
 
 We looked for the most commercially attractive signal five independent engines could offer: does one desk move before another? Early results looked excellent — two relationships at 77-79% same-direction with p-values under 0.001.
 
@@ -69,12 +69,12 @@ Collection order is now randomised every pass, and lead/lag is computed **only**
 We publish the rejections beside the survivor. A product built to find fake edges has no business hiding one of its own.
 
 ## What the gate rejected
-- opportunities detected: **432**
+- opportunities detected: **431**
 - passed clean (zero warnings): **70**
-- flagged or withheld: **362** (84% of everything found)
-- rated high confidence: **8**
+- flagged or withheld: **361** (84% of everything found)
+- rated high confidence: **6**
 - average quoted edge, clean rows: **1.04%**
-- average quoted edge, flagged rows: **5.77%**
+- average quoted edge, flagged rows: **5.78%**
 
   The flagged rows carry the *larger* average edge. That is the entire point: in this dataset the biggest number is usually the biggest bug, and a product that ranks on edge alone sells you its own defects.
 
@@ -87,7 +87,7 @@ We publish the rejections beside the survivor. A product built to find fake edge
 - largest: **Los Angeles Rams -14.00** — 3.62 worst vs **4.60** at BetMGM (**+26.9%**)
 
 ## Book movement (stale-line detection)
-- observed window: **233 minutes**, 737 snapshots
+- observed window: **243 minutes**, 755 snapshots
 
   | book | engine | active bets | repriced | held | stale % |
   |---|---|---:|---:|---:|---:|
