@@ -1,14 +1,14 @@
 # Product proof report
-_Generated 2026-09-11 00:05 UTC from live data — last 24h_
+_Generated 2026-09-11 00:08 UTC from live data — last 24h_
 
 ## Collection health
-- collection runs: **180 total, 177 ok, 2 failed** (98% uptime)
-- prices collected: **60,637** across **94** events
-- snapshots: **465** over **108 minutes** of observation
-  - DAZN Bet (altenar): 62 events, 15,795 prices
+- collection runs: **184 total, 181 ok, 2 failed** (98% uptime)
+- prices collected: **60,762** across **95** events
+- snapshots: **471** over **111 minutes** of observation
+  - DAZN Bet (altenar): 63 events, 15,919 prices
   - BetMGM (entain): 17 events, 23,696 prices
   - BetRivers (kambi): 53 events, 16,398 prices
-  - NEO.bet (neo): 30 events, 2,064 prices
+  - NEO.bet (neo): 30 events, 2,065 prices
   - Pinnacle (pinnacle): 19 events, 2,684 prices
 
 ## Independence — the thing that makes the consensus mean anything
@@ -34,16 +34,16 @@ _Generated 2026-09-11 00:05 UTC from live data — last 24h_
 ## Consensus depth — how many engines actually price each market
   | market | exact markets | avg engines | 4 or more | only 2 |
   |---|---:|---:|---:|---:|
-  | total | 3,636 | 1.83 | 376 | 558 |
-  | spread | 3,422 | 2.03 | 580 | 603 |
+  | total | 3,638 | 1.83 | 376 | 558 |
+  | spread | 3,424 | 2.03 | 580 | 603 |
   | team_total | 2,658 | 1.25 | 18 | 310 |
   | moneyline | 181 | 2.03 | 30 | 64 |
 
   Five engines collect, but they do not all price the same lines. NEO posts spreads far more than totals; Altenar posts few moneylines. Most individual markets are therefore covered by two or three engines, not five. The confidence score already penalises thin coverage, and this table is here so the headline number is never read as if every row had five opinions behind it.
 
 ## Lead / lag between engines — tested, and so far NOT supported
-- observed window: **108 minutes**, 466 snapshots
-- unbiased (randomised collection order): **27 minutes**
+- observed window: **111 minutes**, 471 snapshots
+- unbiased (randomised collection order): **29 minutes**
 
 We looked for the most commercially attractive signal five independent engines could offer: does one desk move before another? Early results looked excellent — two relationships at 77-79% same-direction with p-values under 0.001.
 
@@ -59,8 +59,8 @@ Collection order is now randomised every pass. Measured on that unbiased data on
 Nothing here is published as a signal, and nothing will be until it survives measurement on unbiased data. We are reporting a feature that did not work, because a product built to find fake edges has no business hiding one of its own.
 
 ## What the gate rejected
-- opportunities detected: **348**
-- passed clean (zero warnings): **77**
+- opportunities detected: **347**
+- passed clean (zero warnings): **76**
 - flagged or withheld: **271** (78% of everything found)
 - rated high confidence: **39**
 - average quoted edge, clean rows: **0.99%**
@@ -74,15 +74,15 @@ Nothing here is published as a signal, and nothing will be until it survives mea
 - largest: **Under 8.50** — 1.82 worst vs **4.10** at BetMGM (**+125.3%**)
 
 ## Book movement (stale-line detection)
-- observed window: **108 minutes**, 465 snapshots
+- observed window: **111 minutes**, 471 snapshots
 
   | book | engine | active bets | repriced | held | stale % |
   |---|---|---:|---:|---:|---:|
   | BetRivers | kambi | 1206 | 408 | 798 | 66.2% |
   | Pinnacle | pinnacle | 622 | 335 | 287 | 46.1% |
   | NEO.bet | neo | 332 | 190 | 142 | 42.8% |
-  | BetMGM | entain | 1600 | 978 | 622 | 38.9% |
-  | DAZN Bet | altenar | 1002 | 690 | 312 | 31.1% |
+  | BetMGM | entain | 1601 | 978 | 623 | 38.9% |
+  | DAZN Bet | altenar | 1003 | 700 | 303 | 30.2% |
 
 ## Known limits — stated, not hidden
 - NFL only so far; other leagues collect but are not tuned.
