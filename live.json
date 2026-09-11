@@ -1,18 +1,16 @@
 {
- "generated_at": "2026-09-11T14:20:23.774263+00:00",
+ "generated_at": "2026-09-11T14:23:44.506605+00:00",
  "engines": {
   "live": 5,
   "expected": 5,
-  "healthy": 4,
-  "degraded": [
-   "Pinnacle"
-  ],
+  "healthy": 5,
+  "degraded": [],
   "down": [],
   "books": [
    {
     "engine": "pinnacle",
     "book": "Pinnacle",
-    "status": "degraded"
+    "status": "healthy"
    },
    {
     "engine": "kambi",
@@ -263,7 +261,7 @@
    "a": "BetMGM",
    "b": "BetRivers",
    "shared": 5364,
-   "identical_pct": 10.3
+   "identical_pct": 10.2
   },
   {
    "a": "BetMGM",
@@ -281,7 +279,7 @@
    "a": "DAZN Bet",
    "b": "BetRivers",
    "shared": 2146,
-   "identical_pct": 2.7
+   "identical_pct": 2.6
   },
   {
    "a": "DAZN Bet",
@@ -292,8 +290,8 @@
   {
    "a": "BetRivers",
    "b": "Pinnacle",
-   "shared": 1296,
-   "identical_pct": 2.3
+   "shared": 1298,
+   "identical_pct": 2.0
   },
   {
    "a": "DAZN Bet",
@@ -304,14 +302,14 @@
   {
    "a": "BetMGM",
    "b": "Pinnacle",
-   "shared": 1818,
-   "identical_pct": 1.1
+   "shared": 1820,
+   "identical_pct": 1.3
   },
   {
    "a": "DAZN Bet",
    "b": "Pinnacle",
-   "shared": 950,
-   "identical_pct": 0.9
+   "shared": 952,
+   "identical_pct": 0.7
   },
   {
    "a": "NEO.bet",
@@ -328,9 +326,9 @@
   "measured_at": "2026-09-11T06:21:03.409203-07:00"
  },
  "coverage": {
-  "prices": 166991,
+  "prices": 169633,
   "events": 92,
-  "snapshots": 2854,
+  "snapshots": 2906,
   "markets_all_five": 230,
   "avg_engines_per_market": 1.77,
   "markets_compared": 11533
@@ -340,72 +338,38 @@
   "pricing_providers": 23
  },
  "gate": {
-  "detected": 449,
-  "clean": 96,
-  "flagged": 353,
+  "detected": 451,
+  "clean": 93,
+  "flagged": 358,
   "withheld_pct": 79,
-  "avg_edge_clean_pct": -0.02,
-  "avg_edge_flagged_pct": 2.62,
+  "avg_edge_clean_pct": -0.03,
+  "avg_edge_flagged_pct": 2.61,
   "reasons": [
    {
     "reason": "too few independent engines priced it",
-    "rows": 290
+    "rows": 291
    },
    {
     "reason": "no sharp stake limit behind the market",
     "rows": 56
    },
    {
-    "reason": "edge implausibly large, most likely a matching error",
-    "rows": 5
+    "reason": "sharp market too thin to trust the fair value",
+    "rows": 6
    },
    {
-    "reason": "sharp market too thin to trust the fair value",
-    "rows": 2
+    "reason": "edge implausibly large, most likely a matching error",
+    "rows": 5
    }
   ]
  },
  "verification": {
-  "checked": 8,
+  "checked": 9,
   "confirmed": 8,
-  "moved_or_pulled": 0,
+  "moved_or_pulled": 1,
   "shown_free": 3
  },
  "opportunities": [
-  {
-   "event": "Baltimore Ravens @ Indianapolis Colts",
-   "league": "NFL",
-   "start_time": "2026-09-13T10:00:00-07:00",
-   "market": "spread",
-   "period": "full_game",
-   "selection": "Baltimore Ravens",
-   "side": "away",
-   "line": -10.5,
-   "book": "BetRivers",
-   "engine": "kambi",
-   "price": 3.75,
-   "fair_pinnacle": 3.4953,
-   "fair_consensus": 3.6189,
-   "edge_pct": 3.62,
-   "edge_basis": "the more conservative of two independent fair values",
-   "pinnacle_limit": 30000.0,
-   "engines": 5,
-   "disagreement_pct": 4.372,
-   "confidence": 88,
-   "confidence_tier": "high",
-   "reasons": [
-    "Pinnacle risks $30,000 on this market",
-    "all 5 independent engines price this exact market",
-    "fair value built from 4 engines excluding this book",
-    "engines broadly agree (4.4% spread)",
-    "Pinnacle and consensus agree this price is +EV",
-    "price is fresh (under 2 minutes old)"
-   ],
-   "stake": 14.49,
-   "stake_basis": "quarter Kelly on a 27.6% fair probability, scaled to 88% by confidence",
-   "verified_at": "2026-09-11T14:20:27.731198+00:00",
-   "live_price": 3.75
-  },
   {
    "event": "Arizona Cardinals @ Los Angeles Chargers",
    "league": "NFL",
@@ -433,11 +397,11 @@
     "fair value built from 3 engines excluding this book",
     "engines cluster tightly (1.7% spread)",
     "Pinnacle and consensus agree this price is +EV",
-    "price is 6 minutes old"
+    "price is 3 minutes old"
    ],
    "stake": 6.58,
    "stake_basis": "quarter Kelly on a 20.5% fair probability, scaled to 79% by confidence",
-   "verified_at": "2026-09-11T14:20:30.280260+00:00",
+   "verified_at": "2026-09-11T14:23:51.535348+00:00",
    "live_price": 5.0
   },
   {
@@ -467,11 +431,45 @@
     "fair value built from 3 engines excluding this book",
     "engines broadly agree (4.9% spread)",
     "Pinnacle and consensus agree this price is +EV",
-    "price is 6 minutes old"
+    "price is 3 minutes old"
    ],
    "stake": 9.23,
    "stake_basis": "quarter Kelly on a 29.2% fair probability, scaled to 78% by confidence",
-   "verified_at": "2026-09-11T14:20:32.699493+00:00",
+   "verified_at": "2026-09-11T14:23:54.109911+00:00",
+   "live_price": 3.5
+  },
+  {
+   "event": "New Orleans Saints @ Detroit Lions",
+   "league": "NFL",
+   "start_time": "2026-09-13T10:00:00-07:00",
+   "market": "spread",
+   "period": "full_game",
+   "selection": "Detroit Lions",
+   "side": "home",
+   "line": -14.5,
+   "book": "BetRivers",
+   "engine": "kambi",
+   "price": 3.5,
+   "fair_pinnacle": 3.4288,
+   "fair_consensus": 3.3815,
+   "edge_pct": 2.08,
+   "edge_basis": "the more conservative of two independent fair values",
+   "pinnacle_limit": 30000.0,
+   "engines": 4,
+   "disagreement_pct": 3.402,
+   "confidence": 78,
+   "confidence_tier": "high",
+   "reasons": [
+    "Pinnacle risks $30,000 on this market",
+    "4 of 5 engines price this exact market",
+    "fair value built from 3 engines excluding this book",
+    "engines broadly agree (3.4% spread)",
+    "Pinnacle and consensus agree this price is +EV",
+    "price is 4 minutes old"
+   ],
+   "stake": 8.1,
+   "stake_basis": "quarter Kelly on a 29.2% fair probability, scaled to 78% by confidence",
+   "verified_at": "2026-09-11T14:23:55.588461+00:00",
    "live_price": 3.5
   }
  ],
@@ -483,7 +481,7 @@
   "book": "BetRivers",
   "price": 2.35,
   "apparent_edge_pct": 68.7,
-  "confidence": 4,
+  "confidence": 0,
   "warnings": [
    "EV 68.7% vs consensus is implausibly high",
    "consensus rests on only 2 other engine(s) - thin",
@@ -493,8 +491,8 @@
  },
  "shopping": {
   "markets": 2101,
-  "median_vs_median_pct": 2.056,
-  "median_vs_worst_pct": 4.839,
+  "median_vs_median_pct": 2.063,
+  "median_vs_worst_pct": 4.833,
   "window_seconds": 1200,
   "examples": [
    {
@@ -545,7 +543,7 @@
  },
  "clv": {
   "graded": 0.0,
-  "pending": 647.0,
+  "pending": 655.0,
   "avg_clv_pct": null,
   "beat_the_close": 0.0,
   "avg_clv_clean_rows": null,
@@ -555,7 +553,7 @@
  "lead_lag": {
   "published": [],
   "tested": 14,
-  "unbiased_minutes": 882.0,
+  "unbiased_minutes": 885.0,
   "retractions": [
    {
     "claimed": "78.9% same-direction, 85s lag",
@@ -579,7 +577,7 @@
  ],
  "fulfilment": {
   "mode": "manual",
-  "last_poll_at": "2026-09-11T14:20:31.528869+00:00"
+  "last_poll_at": "2026-09-11T14:23:32.187641+00:00"
  },
  "pricing": {
   "bettor": {
