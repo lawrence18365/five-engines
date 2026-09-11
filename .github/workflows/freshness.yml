@@ -1,0 +1,32 @@
+# External dead-man's switch for Five Engines production.
+# The VM's own watchdog cannot report its own death; this runs on GitHub's
+# infrastructure and judges production by what visitors actually get.
+name: freshness
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+jobs:
+  live-json:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: live.json must be under 45 minutes old
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          set -u
+          body=$(curl -fsS --max-time 30 "https://lawrence18365.github.io/five-engines/live.json?t=$(date +%s)") || body=""
+          age=$(printf '%s' "$body" | python3 -c 'import json,sys,datetime as d
+          try:
+              g = json.load(sys.stdin)["generated_at"]
+              print(int((d.datetime.now(d.timezone.utc) - d.datetime.fromisoformat(g.replace("Z", "+00:00"))).total_seconds()))
+          except Exception:
+              print(-1)')
+          echo "live.json age: ${age}s"
+          if [ "$age" -lt 0 ] || [ "$age" -gt 2700 ]; then
+            msg="Public live.json is $([ "$age" -lt 0 ] && echo unreadable || echo "$((age / 60)) min old"). Production may be down: check the VM (ssh fe-prod) and its watchdog."
+            curl -fsS -H "Title: Five Engines: site stale" -H "Priority: high" -H "Tags: rotating_light" -d "$msg" "https://ntfy.sh/${NTFY_TOPIC}" || true
+            echo "::error::$msg"
+            exit 1
+          fi
