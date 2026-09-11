@@ -1,38 +1,38 @@
 # Product proof report
-_Generated 2026-09-11 13:40 UTC from live data — last 24h_
+_Generated 2026-09-11 13:53 UTC from live data — last 24h_
 
 ## Collection health
-- collection runs: **1390 total, 1177 ok, 212 failed** (85% uptime)
-- prices collected: **155,728** across **91** events
-- snapshots: **2638** over **921 minutes** of observation
-  - DAZN Bet (altenar): 69 events, 46,577 prices
-  - BetMGM (entain): 32 events, 54,854 prices
+- collection runs: **1404 total, 1190 ok, 212 failed** (85% uptime)
+- prices collected: **158,573** across **91** events
+- snapshots: **2702** over **935 minutes** of observation
+  - DAZN Bet (altenar): 69 events, 47,105 prices
+  - BetMGM (entain): 32 events, 56,496 prices
   - bwin (entain): 14 events, 14,998 prices
-  - BetRivers (kambi): 61 events, 30,636 prices
-  - NEO.bet (neo): 33 events, 3,176 prices
-  - Pinnacle (pinnacle): 32 events, 5,487 prices
+  - BetRivers (kambi): 61 events, 31,043 prices
+  - NEO.bet (neo): 33 events, 3,200 prices
+  - Pinnacle (pinnacle): 32 events, 5,731 prices
 
 ## Independence — the thing that makes the consensus mean anything
 - exact markets priced by **all 5** engines: **230**
-- exact markets priced by 2 or more engines: **4,928**
+- exact markets priced by 2 or more engines: **4,965**
 - measured pairwise price agreement (identical price on the same exact bet):
 
   | pair | shared markets | identical |
   |---|---:|---:|
-  | betmgm vs bwin | 2,322 | 100.0% |
+  | betmgm vs bwin | 2,322 | 96.2% |
   | betrivers_on vs bwin | 2,320 | 10.6% |
   | bwin vs neobet | 627 | 10.5% |
-  | betmgm vs betrivers_on | 3,018 | 10.2% |
-  | betmgm vs neobet | 679 | 10.0% |
+  | betmgm vs neobet | 679 | 10.2% |
+  | betmgm vs betrivers_on | 3,044 | 10.0% |
   | betrivers_on vs neobet | 744 | 9.4% |
-  | betrivers_on vs dazn_bet | 2,124 | 2.6% |
+  | betrivers_on vs dazn_bet | 2,138 | 2.7% |
   | dazn_bet vs neobet | 530 | 2.3% |
-  | bwin vs dazn_bet | 1,562 | 2.0% |
-  | betmgm vs dazn_bet | 2,106 | 2.0% |
-  | betrivers_on vs pinnacle | 1,288 | 2.0% |
-  | betmgm vs pinnacle | 1,062 | 1.5% |
+  | bwin vs dazn_bet | 1,562 | 1.9% |
+  | betmgm vs dazn_bet | 2,106 | 1.9% |
+  | betrivers_on vs pinnacle | 1,296 | 1.9% |
   | bwin vs pinnacle | 756 | 1.1% |
-  | dazn_bet vs pinnacle | 950 | 1.1% |
+  | betmgm vs pinnacle | 1,062 | 1.1% |
+  | dazn_bet vs pinnacle | 950 | 0.8% |
   | neobet vs pinnacle | 288 | 0.7% |
 
   A pair near 100% is one trading desk wearing two logos and is counted once.
@@ -40,16 +40,16 @@ _Generated 2026-09-11 13:40 UTC from live data — last 24h_
 ## Consensus depth — how many engines actually price each market
   | market | exact markets | avg engines | 4 or more | only 2 |
   |---|---:|---:|---:|---:|
-  | total | 4,364 | 1.93 | 606 | 686 |
-  | spread | 3,966 | 1.95 | 583 | 821 |
-  | team_total | 2,924 | 1.27 | 18 | 420 |
+  | total | 4,371 | 1.93 | 614 | 692 |
+  | spread | 3,970 | 1.94 | 583 | 821 |
+  | team_total | 2,928 | 1.27 | 18 | 430 |
   | moneyline | 237 | 1.91 | 30 | 94 |
 
   Five engines collect, but they do not all price the same lines. NEO posts spreads far more than totals; Altenar posts few moneylines. Most individual markets are therefore covered by two or three engines, not five. The confidence score already penalises thin coverage, and this table is here so the headline number is never read as if every row had five opinions behind it.
 
 ## Lead / lag between engines — tested, and NOT supported
-- observed window: **921 minutes**, 2638 snapshots
-- unbiased (randomised collection order): **841 minutes**
+- observed window: **935 minutes**, 2703 snapshots
+- unbiased (randomised collection order): **854 minutes**
 
 We looked for the most commercially attractive signal five independent engines could offer: does one desk move before another? Early results looked excellent — two relationships at 77-79% same-direction with p-values under 0.001.
 
@@ -62,10 +62,10 @@ Collection order is now randomised every pass, and lead/lag is computed **only**
   | pair | paired moves | same direction | verdict |
   |---|---:|---:|---|
   | neo → altenar | 1 | 100.0% | insufficient sample |
-  | pinnacle → kambi | 34 | 94.1% | polling artifact |
-  | kambi → pinnacle | 64 | 76.6% | polling artifact |
+  | pinnacle → kambi | 54 | 87.0% | polling artifact |
   | entain → neo | 7 | 71.4% | polling artifact |
-  | entain → pinnacle | 101 | 56.4% | noise |
+  | kambi → pinnacle | 104 | 70.2% | polling artifact |
+  | entain → pinnacle | 112 | 59.8% | weak |
   | entain → altenar | 242 | 55.4% | weak |
   | neo → pinnacle | 4 | 50.0% | polling artifact |
   | altenar → kambi | 22 | 45.5% | noise |
@@ -73,7 +73,7 @@ Collection order is now randomised every pass, and lead/lag is computed **only**
   | pinnacle → altenar | 19 | 36.8% | insufficient sample |
   | altenar → entain | 201 | 35.3% | polling artifact |
   | altenar → pinnacle | 12 | 33.3% | polling artifact |
-  | kambi → entain | 10 | 20.0% | polling artifact |
+  | kambi → entain | 27 | 14.8% | polling artifact |
   | entain → kambi | 6 | 0.0% | polling artifact |
 
 **Rates move as samples grow. entain->altenar read 60.0% at n=160 and 53.8% at n=325 on the same unbiased data - regression to the mean, not a signal. Treat any relationship here as provisional until its sample is several hundred paired moves.**
@@ -81,40 +81,40 @@ Collection order is now randomised every pass, and lead/lag is computed **only**
 We publish the rejections beside the survivor. A product built to find fake edges has no business hiding one of its own.
 
 ## What the gate rejected
-- opportunities detected: **659**
-- passed clean (zero warnings): **120**
-- flagged or withheld: **539** (82% of everything found)
-- rated high confidence: **32**
-- average quoted edge, clean rows: **0.69%**
-- average quoted edge, flagged rows: **4.78%**
+- opportunities detected: **451**
+- passed clean (zero warnings): **101**
+- flagged or withheld: **350** (78% of everything found)
+- rated high confidence: **30**
+- average quoted edge, clean rows: **0.64%**
+- average quoted edge, flagged rows: **2.38%**
 
   The flagged rows carry the *larger* average edge. That is the entire point: in this dataset the biggest number is usually the biggest bug, and a product that ranks on edge alone sells you its own defects.
 
 ## Line shopping value
-- comparable bets priced by 3+ engines, every price confirmed within **10 minutes** of the others: **405**
-- best price vs the **median** price: **2.48%** — what shopping saves a typical bettor, and the figure we advertise
+- comparable bets priced by 3+ engines, every price confirmed within **10 minutes** of the others: **415**
+- best price vs the **median** price: **2.44%** — what shopping saves a typical bettor, and the figure we advertise
 - best price vs the **worst** price: **5.22%** — the spread across the market, a different question
 
   These two get quoted interchangeably in this industry. They are not the same number and we keep them apart deliberately.
 - largest: **Los Angeles Rams -14.00** — 3.62 worst vs **4.60** at BetMGM (**+26.9%**)
 
 ## Book movement (stale-line detection)
-- observed window: **921 minutes**, 2638 snapshots
+- observed window: **935 minutes**, 2703 snapshots
 
   | book | engine | active bets | repriced | held | stale % |
   |---|---|---:|---:|---:|---:|
-  | BetRivers | kambi | 3396 | 1662 | 1734 | 51.1% |
-  | Pinnacle | pinnacle | 2256 | 1487 | 769 | 34.1% |
-  | BetMGM | entain | 4252 | 2890 | 1362 | 32.0% |
-  | bwin | entain | 3252 | 2247 | 1005 | 30.9% |
+  | BetRivers | kambi | 3458 | 1710 | 1748 | 50.5% |
+  | Pinnacle | pinnacle | 2280 | 1512 | 768 | 33.7% |
+  | BetMGM | entain | 4331 | 3014 | 1317 | 30.4% |
+  | bwin | entain | 3311 | 2342 | 969 | 29.3% |
   | NEO.bet | neo | 1044 | 827 | 217 | 20.8% |
-  | DAZN Bet | altenar | 2475 | 2073 | 402 | 16.2% |
+  | DAZN Bet | altenar | 2481 | 2075 | 406 | 16.4% |
 
 ## Closing-line value — the scoreboard we can be judged by
 
 Everything above is a claim about the present. This is the one number that says whether those claims were right, and it is the only one a matching bug cannot fake into looking like profit: a mismatched market produces nonsense CLV exactly as readily as a nonsense edge, and both read as noise.
 
-- opportunities logged and awaiting settlement: **619**
+- opportunities logged and awaiting settlement: **625**
 - graded against a closing line so far: **0**
 
   Nothing is graded yet — a closing line only exists once an event starts. This section will fill in on its own, and we publish it whichever way it goes.
