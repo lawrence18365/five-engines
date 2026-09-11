@@ -1,11 +1,11 @@
 # Product proof report
-_Generated 2026-09-11 06:04 UTC from live data — last 24h_
+_Generated 2026-09-11 06:16 UTC from live data — last 24h_
 
 ## Collection health
-- collection runs: **727 total, 639 ok, 87 failed** (88% uptime)
-- prices collected: **89,997** across **95** events
-- snapshots: **1163** over **465 minutes** of observation
-  - DAZN Bet (altenar): 63 events, 27,808 prices
+- collection runs: **747 total, 654 ok, 91 failed** (88% uptime)
+- prices collected: **90,209** across **95** events
+- snapshots: **1182** over **478 minutes** of observation
+  - DAZN Bet (altenar): 63 events, 28,020 prices
   - BetMGM (entain): 17 events, 35,694 prices
   - BetRivers (kambi): 58 events, 20,629 prices
   - NEO.bet (neo): 30 events, 2,222 prices
@@ -42,8 +42,8 @@ _Generated 2026-09-11 06:04 UTC from live data — last 24h_
   Five engines collect, but they do not all price the same lines. NEO posts spreads far more than totals; Altenar posts few moneylines. Most individual markets are therefore covered by two or three engines, not five. The confidence score already penalises thin coverage, and this table is here so the headline number is never read as if every row had five opinions behind it.
 
 ## Lead / lag between engines — tested, and NOT supported
-- observed window: **465 minutes**, 1163 snapshots
-- unbiased (randomised collection order): **385 minutes**
+- observed window: **478 minutes**, 1183 snapshots
+- unbiased (randomised collection order): **397 minutes**
 
 We looked for the most commercially attractive signal five independent engines could offer: does one desk move before another? Early results looked excellent — two relationships at 77-79% same-direction with p-values under 0.001.
 
@@ -87,7 +87,7 @@ We publish the rejections beside the survivor. A product built to find fake edge
 - largest: **Los Angeles Rams -14.00** — 3.62 worst vs **4.60** at BetMGM (**+26.9%**)
 
 ## Book movement (stale-line detection)
-- observed window: **465 minutes**, 1163 snapshots
+- observed window: **478 minutes**, 1182 snapshots
 
   | book | engine | active bets | repriced | held | stale % |
   |---|---|---:|---:|---:|---:|
