@@ -1,48 +1,50 @@
 {
- "generated_at": "2026-09-12T18:02:33.452454+00:00",
+ "generated_at": "2026-09-12T18:21:33.389719+00:00",
  "engines": {
-  "live": 5,
+  "live": 4,
   "expected": 5,
-  "healthy": 4,
+  "healthy": 3,
   "degraded": [
    "DAZN Bet"
   ],
-  "down": [],
+  "down": [
+   "Pinnacle"
+  ],
   "books": [
    {
     "engine": "pinnacle",
     "book": "Pinnacle",
-    "status": "healthy",
-    "detail": "118 events across 2 runs",
+    "status": "down",
+    "detail": "no collection runs in window",
     "last_success_at": "2026-09-12T17:41:55.360989+00:00"
    },
    {
     "engine": "kambi",
     "book": "BetRivers",
     "status": "healthy",
-    "detail": "145 events across 2 runs",
-    "last_success_at": "2026-09-12T17:49:57.068222+00:00"
+    "detail": "140 events across 2 runs",
+    "last_success_at": "2026-09-12T18:13:04.293099+00:00"
    },
    {
     "engine": "entain",
     "book": "BetMGM",
     "status": "healthy",
-    "detail": "107 events across 2 runs",
-    "last_success_at": "2026-09-12T17:45:49.874655+00:00"
+    "detail": "112 events across 2 runs",
+    "last_success_at": "2026-09-12T18:14:18.207026+00:00"
    },
    {
     "engine": "altenar",
     "book": "DAZN Bet",
     "status": "degraded",
     "detail": "1 of 2 runs incomplete or failed",
-    "last_success_at": "2026-09-12T17:51:59.565131+00:00"
+    "last_success_at": "2026-09-12T18:06:52.381487+00:00"
    },
    {
     "engine": "neo",
     "book": "NEO.bet",
     "status": "healthy",
     "detail": "28 events across 1 runs",
-    "last_success_at": "2026-09-12T17:50:07.106406+00:00"
+    "last_success_at": "2026-09-12T18:13:05.996900+00:00"
    }
   ]
  },
@@ -273,48 +275,48 @@
    "a": "BetMGM",
    "b": "NEO.bet",
    "shared": 1363,
-   "identical_pct": 10.2
+   "identical_pct": 10.3
   },
   {
    "a": "BetMGM",
    "b": "BetRivers",
-   "shared": 10955,
+   "shared": 11004,
    "identical_pct": 9.3
   },
   {
    "a": "BetRivers",
    "b": "NEO.bet",
    "shared": 780,
-   "identical_pct": 7.9
+   "identical_pct": 7.7
   },
   {
    "a": "DAZN Bet",
    "b": "NEO.bet",
    "shared": 730,
-   "identical_pct": 3.0
+   "identical_pct": 2.7
   },
   {
    "a": "DAZN Bet",
    "b": "BetRivers",
-   "shared": 8036,
-   "identical_pct": 1.9
+   "shared": 8042,
+   "identical_pct": 2.0
   },
   {
    "a": "BetRivers",
    "b": "Pinnacle",
    "shared": 4520,
-   "identical_pct": 1.6
+   "identical_pct": 1.7
   },
   {
    "a": "DAZN Bet",
    "b": "BetMGM",
-   "shared": 9367,
+   "shared": 9423,
    "identical_pct": 1.4
   },
   {
    "a": "BetMGM",
    "b": "Pinnacle",
-   "shared": 3728,
+   "shared": 3751,
    "identical_pct": 1.1
   },
   {
@@ -338,28 +340,28 @@
   "measured_at": "2026-09-12T11:08:38.807587+00:00"
  },
  "coverage": {
-  "prices": 714475,
-  "events": 267,
-  "snapshots": 13213,
+  "prices": 721113,
+  "events": 268,
+  "snapshots": 13356,
   "markets_all_five": 278,
   "avg_engines_per_market": 1.82,
-  "markets_compared": 37670
+  "markets_compared": 37748
  },
  "market_structure": {
   "ontario_brands": 35,
   "pricing_providers": 23
  },
  "gate": {
-  "detected": 1233,
-  "clean": 109,
-  "flagged": 1124,
+  "detected": 1250,
+  "clean": 113,
+  "flagged": 1137,
   "withheld_pct": 91,
-  "avg_edge_clean_pct": 0.96,
-  "avg_edge_flagged_pct": 1.89,
+  "avg_edge_clean_pct": 0.93,
+  "avg_edge_flagged_pct": 1.96,
   "reasons": [
    {
     "reason": "too few independent engines priced it",
-    "rows": 845
+    "rows": 860
    },
    {
     "reason": "research only: Pinnacle is the reference, not a target",
@@ -367,21 +369,90 @@
    },
    {
     "reason": "sharp market too thin to trust the fair value",
-    "rows": 23
+    "rows": 20
    },
    {
     "reason": "edge implausibly large, most likely a matching error",
-    "rows": 13
+    "rows": 14
    }
   ]
  },
  "verification": {
-  "checked": 0,
-  "confirmed": 0,
+  "checked": 2,
+  "confirmed": 2,
   "moved_or_pulled": 0,
-  "shown_free": 0
+  "shown_free": 2
  },
- "opportunities": [],
+ "opportunities": [
+  {
+   "event": "KC Royals @ BOS Red Sox",
+   "league": "MLB",
+   "start_time": "2026-09-12T20:10:00+00:00",
+   "market": "total",
+   "period": "full_game",
+   "selection": "Over",
+   "side": "over",
+   "line": 8.5,
+   "book": "BetRivers",
+   "engine": "kambi",
+   "price": 1.97,
+   "fair_pinnacle": 1.9425,
+   "fair_consensus": 1.9669,
+   "edge_pct": 0.16,
+   "edge_basis": "the more conservative of two independent fair values",
+   "pinnacle_limit": 7500.0,
+   "engines": 4,
+   "disagreement_pct": 3.051,
+   "confidence": 76,
+   "confidence_tier": "high",
+   "reasons": [
+    "Pinnacle limit $7,500",
+    "4 of 5 engines price this exact market",
+    "fair value built from 3 engines excluding this book",
+    "engines broadly agree (3.1% spread)",
+    "Pinnacle and consensus agree this price is +EV",
+    "price has held this level for 906 minutes"
+   ],
+   "stake": null,
+   "stake_basis": "edge too small to stake meaningfully \u2014 quarter Kelly sizes this at under $5 on a $5,000 bankroll",
+   "verified_at": "2026-09-12T18:23:10.614153+00:00",
+   "live_price": 1.97
+  },
+  {
+   "event": "KC Royals @ BOS Red Sox",
+   "league": "MLB",
+   "start_time": "2026-09-12T20:10:00+00:00",
+   "market": "total",
+   "period": "full_game",
+   "selection": "Over",
+   "side": "over",
+   "line": 7.5,
+   "book": "BetRivers",
+   "engine": "kambi",
+   "price": 1.71,
+   "fair_pinnacle": 1.6983,
+   "fair_consensus": 1.7092,
+   "edge_pct": 0.05,
+   "edge_basis": "the more conservative of two independent fair values",
+   "pinnacle_limit": 7500.0,
+   "engines": 4,
+   "disagreement_pct": 3.312,
+   "confidence": 76,
+   "confidence_tier": "high",
+   "reasons": [
+    "Pinnacle limit $7,500",
+    "4 of 5 engines price this exact market",
+    "fair value built from 3 engines excluding this book",
+    "engines broadly agree (3.3% spread)",
+    "Pinnacle and consensus agree this price is +EV",
+    "price has held this level for 906 minutes"
+   ],
+   "stake": null,
+   "stake_basis": "edge too small to stake meaningfully \u2014 quarter Kelly sizes this at under $5 on a $5,000 bankroll",
+   "verified_at": "2026-09-12T18:23:12.868095+00:00",
+   "live_price": 1.71
+  }
+ ],
  "rejected_example": {
   "event": "Robert Morris Colonials @ Akron Zips",
   "market": "moneyline",
@@ -398,60 +469,60 @@
   ]
  },
  "shopping": {
-  "markets": 5249,
-  "median_vs_median_pct": 2.11,
-  "median_vs_worst_pct": 4.848,
+  "markets": 4646,
+  "median_vs_median_pct": 1.923,
+  "median_vs_worst_pct": 4.412,
   "window_seconds": 1200,
   "examples": [
    {
-    "selection": "Texas Southern Tigers",
+    "selection": "Temple",
     "line": null,
     "market": "moneyline",
-    "event": "Texas Southern Tigers @ UTEP Miners",
+    "event": "Penn State @ Temple",
     "worst": 11.0,
-    "median": 15.86,
-    "best": 23.0,
-    "best_book": "BetRivers",
-    "improvement_pct": 109.091
+    "median": 14.115,
+    "best": 16.5,
+    "best_book": "BetMGM",
+    "improvement_pct": 50.0
    },
    {
-    "selection": "Utah State",
+    "selection": "Washington State",
     "line": null,
     "market": "moneyline",
-    "event": "Utah State @ Washington",
-    "worst": 11.0,
-    "median": 19.425,
-    "best": 20.0,
-    "best_book": "BetRivers",
-    "improvement_pct": 81.818
+    "event": "Washington State @ Kansas State",
+    "worst": 6.5,
+    "median": 7.59,
+    "best": 8.0,
+    "best_book": "BetMGM",
+    "improvement_pct": 23.077
    },
    {
-    "selection": "Cal Poly Mustangs",
+    "selection": "Colgate Raiders",
     "line": null,
     "market": "moneyline",
-    "event": "Cal Poly Mustangs @ San Jose State Spartans",
-    "worst": 8.5,
-    "median": 10.23,
-    "best": 15.0,
-    "best_book": "BetRivers",
-    "improvement_pct": 76.471
+    "event": "Colgate Raiders @ Central Michigan Chippewas",
+    "worst": 8.26,
+    "median": 9.25,
+    "best": 10.0,
+    "best_book": "BetMGM",
+    "improvement_pct": 21.065
    },
    {
-    "selection": "Oregon State",
-    "line": null,
-    "market": "moneyline",
-    "event": "Texas Tech @ Oregon State",
-    "worst": 11.0,
-    "median": 15.7,
-    "best": 18.0,
-    "best_book": "BetRivers",
-    "improvement_pct": 63.636
+    "selection": "Over",
+    "line": 54.5,
+    "market": "total",
+    "event": "San Francisco 49ers @ Los Angeles Rams",
+    "worst": 2.625,
+    "median": 2.95,
+    "best": 3.17,
+    "best_book": "Pinnacle",
+    "improvement_pct": 20.762
    }
   ]
  },
  "clv": {
   "graded": 445.0,
-  "pending": 3256.0,
+  "pending": 3296.0,
   "avg_clv_pct": 3.114,
   "beat_the_close": 276.0,
   "avg_clv_clean_rows": 3.429,
@@ -487,7 +558,7 @@
  ],
  "fulfilment": {
   "mode": "manual",
-  "last_poll_at": "2026-09-12T18:03:57.414426+00:00",
+  "last_poll_at": "2026-09-12T18:25:52.113025+00:00",
   "reason": "2 of 5 engines collected in the last 15 minutes (need 3)"
  },
  "pricing": {
