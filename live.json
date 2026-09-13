@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-13T11:27:33.799162+00:00",
+ "generated_at": "2026-09-13T11:58:36.116082+00:00",
  "engines": {
   "live": 5,
   "expected": 5,
@@ -16,35 +16,35 @@
     "book": "Pinnacle",
     "status": "degraded",
     "detail": "1 of 2 runs incomplete or failed",
-    "last_success_at": "2026-09-13T11:10:09.661015+00:00"
+    "last_success_at": "2026-09-13T11:51:42.498589+00:00"
    },
    {
     "engine": "kambi",
     "book": "BetRivers",
     "status": "degraded",
-    "detail": "2 of 4 runs incomplete or failed",
-    "last_success_at": "2026-09-13T11:23:05.229144+00:00"
+    "detail": "1 of 4 runs incomplete or failed",
+    "last_success_at": "2026-09-13T11:52:42.551793+00:00"
    },
    {
     "engine": "entain",
     "book": "BetMGM",
     "status": "healthy",
     "detail": "64 events across 4 runs",
-    "last_success_at": "2026-09-13T11:23:34.911941+00:00"
+    "last_success_at": "2026-09-13T11:53:05.515644+00:00"
    },
    {
     "engine": "altenar",
     "book": "DAZN Bet",
     "status": "degraded",
-    "detail": "1 of 3 runs incomplete or failed",
-    "last_success_at": "2026-09-13T11:22:17.827761+00:00"
+    "detail": "2 of 4 runs incomplete or failed",
+    "last_success_at": "2026-09-13T11:54:10.254451+00:00"
    },
    {
     "engine": "neo",
     "book": "NEO.bet",
     "status": "healthy",
     "detail": "72 events across 2 runs",
-    "last_success_at": "2026-09-13T11:20:47.775917+00:00"
+    "last_success_at": "2026-09-13T11:51:48.948153+00:00"
    }
   ]
  },
@@ -275,61 +275,61 @@
    "a": "BetMGM",
    "b": "NEO.bet",
    "shared": 1374,
-   "identical_pct": 10.0
+   "identical_pct": 9.7
   },
   {
    "a": "BetMGM",
    "b": "BetRivers",
-   "shared": 11187,
-   "identical_pct": 9.0
+   "shared": 11213,
+   "identical_pct": 9.2
   },
   {
    "a": "BetRivers",
    "b": "NEO.bet",
    "shared": 824,
-   "identical_pct": 8.3
+   "identical_pct": 8.0
   },
   {
    "a": "DAZN Bet",
    "b": "NEO.bet",
    "shared": 846,
-   "identical_pct": 3.0
+   "identical_pct": 2.7
   },
   {
    "a": "DAZN Bet",
    "b": "BetRivers",
-   "shared": 8605,
+   "shared": 8665,
    "identical_pct": 2.1
   },
   {
    "a": "BetRivers",
    "b": "Pinnacle",
    "shared": 4930,
-   "identical_pct": 2.0
+   "identical_pct": 1.8
   },
   {
    "a": "DAZN Bet",
    "b": "BetMGM",
-   "shared": 9650,
-   "identical_pct": 1.5
-  },
-  {
-   "a": "BetMGM",
-   "b": "Pinnacle",
-   "shared": 3884,
-   "identical_pct": 1.1
+   "shared": 9656,
+   "identical_pct": 1.6
   },
   {
    "a": "DAZN Bet",
    "b": "Pinnacle",
-   "shared": 3416,
-   "identical_pct": 1.1
+   "shared": 3432,
+   "identical_pct": 1.0
+  },
+  {
+   "a": "BetMGM",
+   "b": "Pinnacle",
+   "shared": 3888,
+   "identical_pct": 0.8
   },
   {
    "a": "NEO.bet",
    "b": "Pinnacle",
    "shared": 320,
-   "identical_pct": 0.3
+   "identical_pct": 0.0
   }
  ],
  "skin_evidence": {
@@ -340,36 +340,36 @@
   "measured_at": "2026-09-13T10:18:03.039003+00:00"
  },
  "coverage": {
-  "prices": 911834,
+  "prices": 916738,
   "events": 320,
-  "snapshots": 16984,
+  "snapshots": 17108,
   "markets_all_five": 286,
   "avg_engines_per_market": 1.8,
-  "markets_compared": 41659
+  "markets_compared": 41790
  },
  "market_structure": {
   "ontario_brands": 35,
   "pricing_providers": 23
  },
  "gate": {
-  "detected": 452,
-  "clean": 46,
-  "flagged": 406,
+  "detected": 483,
+  "clean": 50,
+  "flagged": 433,
   "withheld_pct": 90,
-  "avg_edge_clean_pct": 1.98,
-  "avg_edge_flagged_pct": 2.15,
+  "avg_edge_clean_pct": 1.99,
+  "avg_edge_flagged_pct": 2.09,
   "reasons": [
    {
     "reason": "too few independent engines priced it",
-    "rows": 301
+    "rows": 311
    },
    {
     "reason": "research only: Pinnacle is the reference, not a target",
-    "rows": 97
+    "rows": 116
    },
    {
     "reason": "sharp market too thin to trust the fair value",
-    "rows": 5
+    "rows": 3
    },
    {
     "reason": "edge implausibly large, most likely a matching error",
@@ -396,26 +396,26 @@
    "book": "BetRivers",
    "engine": "kambi",
    "price": 3.6,
-   "fair_pinnacle": 3.5475,
-   "fair_consensus": 3.5049,
-   "edge_pct": 1.48,
+   "fair_pinnacle": 3.5652,
+   "fair_consensus": 3.5171,
+   "edge_pct": 0.98,
    "edge_basis": "the more conservative of two independent fair values",
-   "pinnacle_limit": 50000.0,
+   "pinnacle_limit": 60000.0,
    "engines": 4,
-   "disagreement_pct": 3.438,
+   "disagreement_pct": 3.141,
    "confidence": 78,
    "confidence_tier": "high",
    "reasons": [
-    "Pinnacle risks $50,000 on this market",
+    "Pinnacle risks $60,000 on this market",
     "4 of 5 engines price this exact market",
     "fair value built from 3 engines excluding this book",
-    "engines broadly agree (3.4% spread)",
+    "engines broadly agree (3.1% spread)",
     "Pinnacle and consensus agree this price is +EV",
     "price is 8 minutes old"
    ],
-   "stake": 5.55,
-   "stake_basis": "quarter Kelly on a 28.2% fair probability, scaled to 78% by confidence",
-   "verified_at": "2026-09-13T11:30:34.765455+00:00",
+   "stake": null,
+   "stake_basis": "edge too small to stake meaningfully \u2014 quarter Kelly sizes this at under $5 on a $5,000 bankroll",
+   "verified_at": "2026-09-13T12:00:21.834076+00:00",
    "live_price": 3.6
   },
   {
@@ -449,7 +449,7 @@
    ],
    "stake": null,
    "stake_basis": "edge too small to stake meaningfully \u2014 quarter Kelly sizes this at under $5 on a $5,000 bankroll",
-   "verified_at": "2026-09-13T11:30:35.548460+00:00",
+   "verified_at": "2026-09-13T12:00:23.081134+00:00",
    "live_price": 1.84
   }
  ],
@@ -468,9 +468,9 @@
   ]
  },
  "shopping": {
-  "markets": 2175,
-  "median_vs_median_pct": 2.15,
-  "median_vs_worst_pct": 4.202,
+  "markets": 2193,
+  "median_vs_median_pct": 2.137,
+  "median_vs_worst_pct": 4.248,
   "window_seconds": 1200,
   "examples": [
    {
@@ -521,7 +521,7 @@
  },
  "clv": {
   "graded": 445.0,
-  "pending": 3873.0,
+  "pending": 3898.0,
   "avg_clv_pct": 3.114,
   "beat_the_close": 276.0,
   "avg_clv_clean_rows": 3.429,
@@ -529,13 +529,11 @@
   "note": "CLV is the only claim here that cannot be faked by a matching bug. If clean rows do not beat flagged rows over time, the confidence gate is decoration."
  },
  "lead_lag": {
-  "published": [
-   "kambi -> altenar (81.4% same direction over 86 moves, p=0.0, ~318s lag)"
-  ],
-  "tested": 20,
-  "unbiased_minutes": 3594.0,
-  "unavailable": false,
-  "unavailable_reason": null,
+  "published": [],
+  "tested": 0,
+  "unbiased_minutes": null,
+  "unavailable": true,
+  "unavailable_reason": "the lead/lag query exceeded its time budget on this database; the panel is omitted rather than shown as zero",
   "retractions": [
    {
     "claimed": "78.9% same-direction, 85s lag",
@@ -559,7 +557,7 @@
  ],
  "fulfilment": {
   "mode": "manual",
-  "last_poll_at": "2026-09-13T11:33:51.678305+00:00"
+  "last_poll_at": "2026-09-13T12:02:17.129727+00:00"
  },
  "pricing": {
   "bettor": {
