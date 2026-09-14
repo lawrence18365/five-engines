@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14T18:12:36.594661+00:00",
+ "generated_at": "2026-09-14T18:44:46.580126+00:00",
  "engines": {
   "live": 4,
   "expected": 5,
@@ -14,35 +14,35 @@
     "book": "Pinnacle",
     "status": "down",
     "detail": "no collection runs in window",
-    "last_success_at": "2026-09-14T17:36:38.918753+00:00"
+    "last_success_at": "2026-09-14T18:19:19.995331+00:00"
    },
    {
     "engine": "kambi",
     "book": "BetRivers",
     "status": "healthy",
     "detail": "196 events across 4 runs",
-    "last_success_at": "2026-09-14T18:06:45.197045+00:00"
+    "last_success_at": "2026-09-14T18:41:23.500187+00:00"
    },
    {
     "engine": "entain",
     "book": "BetMGM",
     "status": "healthy",
     "detail": "164 events across 4 runs",
-    "last_success_at": "2026-09-14T18:09:21.995415+00:00"
+    "last_success_at": "2026-09-14T18:42:14.163246+00:00"
    },
    {
     "engine": "altenar",
     "book": "DAZN Bet",
     "status": "healthy",
-    "detail": "332 events across 4 runs",
-    "last_success_at": "2026-09-14T18:08:27.036329+00:00"
+    "detail": "356 events across 4 runs",
+    "last_success_at": "2026-09-14T18:40:09.986622+00:00"
    },
    {
     "engine": "neo",
     "book": "NEO.bet",
     "status": "healthy",
-    "detail": "54 events across 2 runs",
-    "last_success_at": "2026-09-14T18:09:23.274431+00:00"
+    "detail": "28 events across 1 runs",
+    "last_success_at": "2026-09-14T18:41:24.730555+00:00"
    }
   ]
  },
@@ -273,60 +273,60 @@
    "a": "BetMGM",
    "b": "NEO.bet",
    "shared": 1682,
-   "identical_pct": 9.6
+   "identical_pct": 9.5
   },
   {
    "a": "BetMGM",
    "b": "BetRivers",
-   "shared": 12686,
+   "shared": 12692,
    "identical_pct": 9.3
   },
   {
    "a": "BetRivers",
    "b": "NEO.bet",
    "shared": 962,
-   "identical_pct": 8.6
-  },
-  {
-   "a": "DAZN Bet",
-   "b": "NEO.bet",
-   "shared": 1208,
-   "identical_pct": 2.5
+   "identical_pct": 8.4
   },
   {
    "a": "DAZN Bet",
    "b": "BetRivers",
-   "shared": 9798,
+   "shared": 9810,
+   "identical_pct": 2.4
+  },
+  {
+   "a": "DAZN Bet",
+   "b": "NEO.bet",
+   "shared": 1214,
    "identical_pct": 2.3
   },
   {
    "a": "DAZN Bet",
    "b": "BetMGM",
-   "shared": 10996,
+   "shared": 11008,
    "identical_pct": 1.9
   },
   {
    "a": "BetRivers",
    "b": "Pinnacle",
-   "shared": 6318,
+   "shared": 6328,
    "identical_pct": 1.6
   },
   {
    "a": "DAZN Bet",
    "b": "Pinnacle",
-   "shared": 4878,
+   "shared": 4888,
    "identical_pct": 0.9
   },
   {
    "a": "BetMGM",
    "b": "Pinnacle",
-   "shared": 5026,
+   "shared": 5036,
    "identical_pct": 0.8
   },
   {
    "a": "NEO.bet",
    "b": "Pinnacle",
-   "shared": 606,
+   "shared": 608,
    "identical_pct": 0.5
   }
  ],
@@ -338,32 +338,32 @@
   "measured_at": "2026-09-14T17:09:51.048800+00:00"
  },
  "coverage": {
-  "prices": 1233225,
-  "events": 365,
-  "snapshots": 23851,
+  "prices": 1237565,
+  "events": 376,
+  "snapshots": 23984,
   "markets_all_five": 350,
   "avg_engines_per_market": 1.8,
-  "markets_compared": 49378
+  "markets_compared": 49412
  },
  "market_structure": {
   "ontario_brands": 35,
   "pricing_providers": 23
  },
  "gate": {
-  "detected": 342,
-  "clean": 89,
-  "flagged": 253,
+  "detected": 351,
+  "clean": 93,
+  "flagged": 258,
   "withheld_pct": 74,
-  "avg_edge_clean_pct": 3.3,
-  "avg_edge_flagged_pct": -1.36,
+  "avg_edge_clean_pct": 3.17,
+  "avg_edge_flagged_pct": -1.41,
   "reasons": [
    {
     "reason": "too few independent engines priced it",
-    "rows": 124
+    "rows": 134
    },
    {
     "reason": "research only: Pinnacle is the reference, not a target",
-    "rows": 84
+    "rows": 79
    },
    {
     "reason": "sharp market too thin to trust the fair value",
@@ -372,46 +372,12 @@
   ]
  },
  "verification": {
-  "checked": 3,
-  "confirmed": 3,
-  "moved_or_pulled": 0,
-  "shown_free": 3
+  "checked": 6,
+  "confirmed": 2,
+  "moved_or_pulled": 4,
+  "shown_free": 2
  },
  "opportunities": [
-  {
-   "event": "SD Padres @ COL Rockies",
-   "league": "MLB",
-   "start_time": "2026-09-15T00:40:00+00:00",
-   "market": "total",
-   "period": "full_game",
-   "selection": "Over",
-   "side": "over",
-   "line": 12.0,
-   "book": "BetMGM",
-   "engine": "entain",
-   "price": 2.4,
-   "fair_pinnacle": 2.363,
-   "fair_consensus": 2.3505,
-   "edge_pct": 1.56,
-   "edge_basis": "the more conservative of two independent fair values",
-   "pinnacle_limit": 7500.0,
-   "engines": 4,
-   "disagreement_pct": 3.47,
-   "confidence": 78,
-   "confidence_tier": "high",
-   "reasons": [
-    "Pinnacle limit $7,500",
-    "4 of 5 engines price this exact market",
-    "fair value built from 3 engines excluding this book",
-    "engines broadly agree (3.5% spread)",
-    "Pinnacle and consensus agree this price is +EV",
-    "price has held this level for 166 minutes"
-   ],
-   "stake": 10.9,
-   "stake_basis": "quarter Kelly on a 42.3% fair probability, scaled to 78% by confidence",
-   "verified_at": "2026-09-14T18:15:30.867875+00:00",
-   "live_price": 2.4
-  },
   {
    "event": "CHI White Sox @ CLE Guardians",
    "league": "MLB",
@@ -424,9 +390,9 @@
    "book": "BetMGM",
    "engine": "entain",
    "price": 2.7,
-   "fair_pinnacle": 2.6691,
-   "fair_consensus": 2.6121,
-   "edge_pct": 1.16,
+   "fair_pinnacle": 2.6741,
+   "fair_consensus": 2.6142,
+   "edge_pct": 0.97,
    "edge_basis": "the more conservative of two independent fair values",
    "pinnacle_limit": 7500.0,
    "engines": 4,
@@ -439,46 +405,46 @@
     "fair value built from 3 engines excluding this book",
     "engines broadly agree (4.1% spread)",
     "Pinnacle and consensus agree this price is +EV",
-    "price is 7 minutes old"
+    "price is 6 minutes old"
    ],
-   "stake": 6.04,
-   "stake_basis": "quarter Kelly on a 37.5% fair probability, scaled to 71% by confidence",
-   "verified_at": "2026-09-14T18:15:31.995056+00:00",
+   "stake": 5.06,
+   "stake_basis": "quarter Kelly on a 37.4% fair probability, scaled to 71% by confidence",
+   "verified_at": "2026-09-14T18:47:47.486059+00:00",
    "live_price": 2.7
   },
   {
-   "event": "SD Padres @ COL Rockies",
-   "league": "MLB",
-   "start_time": "2026-09-15T00:40:00+00:00",
-   "market": "total",
+   "event": "Seattle Seahawks @ Arizona Cardinals",
+   "league": "NFL",
+   "start_time": "2026-09-20T20:25:00+00:00",
+   "market": "moneyline",
    "period": "full_game",
-   "selection": "Over",
-   "side": "over",
-   "line": 12.5,
-   "book": "BetMGM",
-   "engine": "entain",
-   "price": 2.55,
-   "fair_pinnacle": 2.5365,
-   "fair_consensus": 2.5154,
-   "edge_pct": 0.53,
+   "selection": "Arizona Cardinals",
+   "side": "home",
+   "line": null,
+   "book": "BetRivers",
+   "engine": "kambi",
+   "price": 3.0,
+   "fair_pinnacle": 2.9753,
+   "fair_consensus": 2.9627,
+   "edge_pct": 0.83,
    "edge_basis": "the more conservative of two independent fair values",
-   "pinnacle_limit": 7500.0,
+   "pinnacle_limit": 5000.0,
    "engines": 4,
-   "disagreement_pct": 3.311,
-   "confidence": 78,
+   "disagreement_pct": 2.542,
+   "confidence": 76,
    "confidence_tier": "high",
    "reasons": [
-    "Pinnacle limit $7,500",
+    "Pinnacle limit $5,000",
     "4 of 5 engines price this exact market",
     "fair value built from 3 engines excluding this book",
-    "engines broadly agree (3.3% spread)",
+    "engines cluster tightly (2.5% spread)",
     "Pinnacle and consensus agree this price is +EV",
-    "price has held this level for 80 minutes"
+    "price is 7 minutes old"
    ],
    "stake": null,
    "stake_basis": "edge too small to stake meaningfully \u2014 quarter Kelly sizes this at under $5 on a $5,000 bankroll",
-   "verified_at": "2026-09-14T18:15:33.187595+00:00",
-   "live_price": 2.55
+   "verified_at": "2026-09-14T18:47:48.441802+00:00",
+   "live_price": 3.0
   }
  ],
  "rejected_example": {
@@ -495,9 +461,9 @@
   ]
  },
  "shopping": {
-  "markets": 638,
-  "median_vs_median_pct": 1.364,
-  "median_vs_worst_pct": 3.31,
+  "markets": 634,
+  "median_vs_median_pct": 1.46,
+  "median_vs_worst_pct": 3.384,
   "window_seconds": 1200,
   "examples": [
    {
@@ -548,7 +514,7 @@
  },
  "clv": {
   "graded": 3735.0,
-  "pending": 951.0,
+  "pending": 965.0,
   "avg_clv_pct": 2.0,
   "beat_the_close": 2121.0,
   "avg_clv_clean_rows": 2.552,
@@ -558,7 +524,7 @@
  "lead_lag": {
   "published": [],
   "tested": 20,
-  "unbiased_minutes": 5439.0,
+  "unbiased_minutes": 5472.0,
   "unavailable": false,
   "unavailable_reason": null,
   "retractions": [
@@ -584,7 +550,7 @@
  ],
  "fulfilment": {
   "mode": "manual",
-  "last_poll_at": "2026-09-14T18:18:35.939515+00:00"
+  "last_poll_at": "2026-09-14T18:51:10.700328+00:00"
  },
  "pricing": {
   "bettor": {
