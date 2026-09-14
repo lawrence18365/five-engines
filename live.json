@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14T11:35:31.679274+00:00",
+ "generated_at": "2026-09-14T12:31:42.356235+00:00",
  "engines": {
   "live": 4,
   "expected": 5,
@@ -23,28 +23,28 @@
     "book": "BetRivers",
     "status": "healthy",
     "detail": "196 events across 4 runs",
-    "last_success_at": "2026-09-14T11:29:20.056776+00:00"
+    "last_success_at": "2026-09-14T12:24:47.200791+00:00"
    },
    {
     "engine": "entain",
     "book": "BetMGM",
     "status": "degraded",
-    "detail": "2 of 5 runs incomplete or failed",
-    "last_success_at": "2026-09-14T11:31:06.753235+00:00"
+    "detail": "2 of 4 runs incomplete or failed",
+    "last_success_at": "2026-09-14T12:25:03.916400+00:00"
    },
    {
     "engine": "altenar",
     "book": "DAZN Bet",
     "status": "healthy",
     "detail": "300 events across 4 runs",
-    "last_success_at": "2026-09-14T11:30:49.258155+00:00"
+    "last_success_at": "2026-09-14T12:27:04.345636+00:00"
    },
    {
     "engine": "neo",
     "book": "NEO.bet",
     "status": "healthy",
     "detail": "54 events across 2 runs",
-    "last_success_at": "2026-09-14T11:30:50.423237+00:00"
+    "last_success_at": "2026-09-14T12:23:38.815109+00:00"
    }
   ]
  },
@@ -274,61 +274,61 @@
   {
    "a": "BetMGM",
    "b": "NEO.bet",
-   "shared": 1636,
+   "shared": 1644,
    "identical_pct": 9.7
   },
   {
    "a": "BetMGM",
    "b": "BetRivers",
-   "shared": 12262,
+   "shared": 12550,
    "identical_pct": 9.3
   },
   {
    "a": "BetRivers",
    "b": "NEO.bet",
-   "shared": 946,
+   "shared": 950,
    "identical_pct": 8.1
   },
   {
    "a": "DAZN Bet",
    "b": "NEO.bet",
-   "shared": 1196,
-   "identical_pct": 3.3
+   "shared": 1198,
+   "identical_pct": 2.5
   },
   {
    "a": "DAZN Bet",
    "b": "BetRivers",
-   "shared": 9576,
+   "shared": 9582,
    "identical_pct": 2.4
   },
   {
    "a": "DAZN Bet",
    "b": "BetMGM",
-   "shared": 10680,
+   "shared": 10910,
    "identical_pct": 1.8
   },
   {
    "a": "BetRivers",
    "b": "Pinnacle",
-   "shared": 5852,
+   "shared": 5854,
    "identical_pct": 1.6
   },
   {
    "a": "BetMGM",
    "b": "Pinnacle",
-   "shared": 4804,
+   "shared": 4892,
    "identical_pct": 0.9
   },
   {
    "a": "DAZN Bet",
    "b": "Pinnacle",
-   "shared": 4668,
-   "identical_pct": 0.9
+   "shared": 4670,
+   "identical_pct": 0.8
   },
   {
    "a": "NEO.bet",
    "b": "Pinnacle",
-   "shared": 596,
+   "shared": 598,
    "identical_pct": 0.5
   }
  ],
@@ -340,32 +340,32 @@
   "measured_at": "2026-09-14T11:11:46.562517+00:00"
  },
  "coverage": {
-  "prices": 1169834,
+  "prices": 1177705,
   "events": 349,
-  "snapshots": 22182,
-  "markets_all_five": 344,
+  "snapshots": 22356,
+  "markets_all_five": 346,
   "avg_engines_per_market": 1.79,
-  "markets_compared": 48025
+  "markets_compared": 48295
  },
  "market_structure": {
   "ontario_brands": 35,
   "pricing_providers": 23
  },
  "gate": {
-  "detected": 79,
+  "detected": 100,
   "clean": 6,
-  "flagged": 73,
-  "withheld_pct": 92,
-  "avg_edge_clean_pct": 1.51,
-  "avg_edge_flagged_pct": 4.02,
+  "flagged": 94,
+  "withheld_pct": 94,
+  "avg_edge_clean_pct": 1.28,
+  "avg_edge_flagged_pct": 3.5,
   "reasons": [
    {
-    "reason": "research only: Pinnacle is the reference, not a target",
-    "rows": 36
+    "reason": "too few independent engines priced it",
+    "rows": 59
    },
    {
-    "reason": "too few independent engines priced it",
-    "rows": 30
+    "reason": "research only: Pinnacle is the reference, not a target",
+    "rows": 28
    },
    {
     "reason": "edge implausibly large, most likely a matching error",
@@ -395,9 +395,9 @@
   ]
  },
  "shopping": {
-  "markets": 399,
-  "median_vs_median_pct": 1.639,
-  "median_vs_worst_pct": 3.521,
+  "markets": 591,
+  "median_vs_median_pct": 1.626,
+  "median_vs_worst_pct": 3.652,
   "window_seconds": 1200,
   "examples": [
    {
@@ -448,7 +448,7 @@
  },
  "clv": {
   "graded": 445.0,
-  "pending": 5106.0,
+  "pending": 5139.0,
   "avg_clv_pct": 3.114,
   "beat_the_close": 276.0,
   "avg_clv_clean_rows": 3.429,
@@ -458,7 +458,7 @@
  "lead_lag": {
   "published": [],
   "tested": 20,
-  "unbiased_minutes": 5043.0,
+  "unbiased_minutes": 5098.0,
   "unavailable": false,
   "unavailable_reason": null,
   "retractions": [
@@ -484,7 +484,7 @@
  ],
  "fulfilment": {
   "mode": "manual",
-  "last_poll_at": "2026-09-14T11:41:21.727298+00:00"
+  "last_poll_at": "2026-09-14T12:37:08.871900+00:00"
  },
  "pricing": {
   "bettor": {
