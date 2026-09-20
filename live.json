@@ -1,12 +1,10 @@
 {
- "generated_at": "2026-09-20T10:54:56.128864+00:00",
+ "generated_at": "2026-09-20T11:48:45.397878+00:00",
  "engines": {
   "live": 4,
   "expected": 5,
-  "healthy": 3,
-  "degraded": [
-   "BetRivers"
-  ],
+  "healthy": 4,
+  "degraded": [],
   "down": [
    "Pinnacle"
   ],
@@ -16,35 +14,35 @@
     "book": "Pinnacle",
     "status": "down",
     "detail": "no collection runs in window",
-    "last_success_at": "2026-09-20T10:14:21.353985+00:00"
+    "last_success_at": "2026-09-20T11:06:25.774613+00:00"
    },
    {
     "engine": "kambi",
     "book": "BetRivers",
-    "status": "degraded",
-    "detail": "1 of 4 runs failed",
-    "last_success_at": "2026-09-20T10:47:50.846753+00:00"
+    "status": "healthy",
+    "detail": "153 events across 4 runs",
+    "last_success_at": "2026-09-20T11:39:21.940548+00:00"
    },
    {
     "engine": "entain",
     "book": "BetMGM",
     "status": "healthy",
-    "detail": "62 events across 4 runs",
-    "last_success_at": "2026-09-20T10:48:12.911902+00:00"
+    "detail": "70 events across 4 runs",
+    "last_success_at": "2026-09-20T11:42:00.018783+00:00"
    },
    {
     "engine": "altenar",
     "book": "DAZN Bet",
     "status": "healthy",
-    "detail": "175 events across 3 runs",
-    "last_success_at": "2026-09-20T10:49:48.729291+00:00"
+    "detail": "300 events across 4 runs",
+    "last_success_at": "2026-09-20T11:41:31.514554+00:00"
    },
    {
     "engine": "neo",
     "book": "NEO.bet",
     "status": "healthy",
-    "detail": "35 events across 1 runs",
-    "last_success_at": "2026-09-20T10:46:52.910445+00:00"
+    "detail": "70 events across 2 runs",
+    "last_success_at": "2026-09-20T11:41:34.053150+00:00"
    }
   ]
  },
@@ -275,42 +273,42 @@
    "a": "BetMGM",
    "b": "NEO.bet",
    "shared": 3206,
-   "identical_pct": 14.0
+   "identical_pct": 13.0
   },
   {
    "a": "BetMGM",
    "b": "BetRivers",
-   "shared": 25913,
-   "identical_pct": 8.6
+   "shared": 26321,
+   "identical_pct": 8.4
   },
   {
    "a": "BetRivers",
    "b": "NEO.bet",
-   "shared": 1796,
-   "identical_pct": 8.2
+   "shared": 1798,
+   "identical_pct": 8.4
   },
   {
    "a": "DAZN Bet",
    "b": "BetRivers",
-   "shared": 19349,
+   "shared": 19423,
    "identical_pct": 2.5
   },
   {
    "a": "DAZN Bet",
-   "b": "NEO.bet",
-   "shared": 1478,
-   "identical_pct": 2.0
+   "b": "BetMGM",
+   "shared": 22688,
+   "identical_pct": 1.9
   },
   {
    "a": "DAZN Bet",
-   "b": "BetMGM",
-   "shared": 22388,
+   "b": "NEO.bet",
+   "shared": 1502,
    "identical_pct": 1.9
   },
   {
    "a": "DAZN Bet",
    "b": "Pinnacle",
-   "shared": 8412,
+   "shared": 8420,
    "identical_pct": 1.5
   },
   {
@@ -322,72 +320,106 @@
   {
    "a": "BetMGM",
    "b": "Pinnacle",
-   "shared": 9279,
-   "identical_pct": 1.1
+   "shared": 9419,
+   "identical_pct": 1.0
   },
   {
    "a": "NEO.bet",
    "b": "Pinnacle",
    "shared": 806,
-   "identical_pct": 0.5
+   "identical_pct": 0.4
   }
  ],
  "skin_evidence": {
   "pair": "BetMGM / bwin",
   "shared": 2495,
-  "identical_pct": 100.0,
-  "read_gap_seconds": 83,
-  "measured_at": "2026-09-20T09:02:08.269505+00:00"
+  "identical_pct": 89.5,
+  "read_gap_seconds": 85,
+  "measured_at": "2026-09-20T11:20:19.489494+00:00"
  },
  "coverage": {
-  "prices": 3216055,
-  "events": 575,
-  "snapshots": 60482,
-  "markets_all_five": 701,
+  "prices": 3232735,
+  "events": 577,
+  "snapshots": 60675,
+  "markets_all_five": 705,
   "avg_engines_per_market": 1.83,
-  "markets_compared": 93271
+  "markets_compared": 93633
  },
  "market_structure": {
   "ontario_brands": 35,
   "pricing_providers": 23
  },
  "gate": {
-  "detected": 955,
-  "clean": 172,
-  "flagged": 783,
-  "withheld_pct": 82,
-  "avg_edge_clean_pct": 2.15,
-  "avg_edge_flagged_pct": 3.8,
+  "detected": 976,
+  "clean": 163,
+  "flagged": 813,
+  "withheld_pct": 83,
+  "avg_edge_clean_pct": 2.22,
+  "avg_edge_flagged_pct": 3.65,
   "reasons": [
    {
     "reason": "too few independent engines priced it",
-    "rows": 620
+    "rows": 645
    },
    {
     "reason": "research only: Pinnacle is the reference, not a target",
-    "rows": 137
+    "rows": 141
    },
    {
     "reason": "edge implausibly large, most likely a matching error",
     "rows": 23
    },
    {
-    "reason": "engines disagree beyond tolerance",
+    "reason": "sharp market too thin to trust the fair value",
     "rows": 2
    },
    {
-    "reason": "sharp market too thin to trust the fair value",
-    "rows": 1
+    "reason": "engines disagree beyond tolerance",
+    "rows": 2
    }
   ]
  },
  "verification": {
-  "checked": 6,
-  "confirmed": 1,
+  "checked": 7,
+  "confirmed": 2,
   "moved_or_pulled": 5,
-  "shown_free": 1
+  "shown_free": 2
  },
  "opportunities": [
+  {
+   "event": "Minnesota Vikings @ Chicago Bears",
+   "league": "NFL",
+   "start_time": "2026-09-20T17:00:00+00:00",
+   "market": "spread",
+   "period": "full_game",
+   "selection": "Minnesota Vikings",
+   "side": "away",
+   "line": -3.5,
+   "book": "DAZN Bet",
+   "engine": "altenar",
+   "price": 4.45,
+   "fair_pinnacle": 4.2935,
+   "fair_consensus": 4.0456,
+   "edge_pct": 3.65,
+   "edge_basis": "the more conservative of two independent fair values",
+   "pinnacle_limit": 50000.0,
+   "engines": 5,
+   "disagreement_pct": 4.304,
+   "confidence": 88,
+   "confidence_tier": "high",
+   "reasons": [
+    "Pinnacle risks $50,000 on this market",
+    "all 5 independent engines price this exact market",
+    "fair value built from 4 engines excluding this book",
+    "engines broadly agree (4.3% spread)",
+    "Pinnacle and consensus agree this price is +EV",
+    "price has held this level for 5334 minutes"
+   ],
+   "stake": 11.62,
+   "stake_basis": "quarter Kelly on a 23.3% fair probability, scaled to 88% by confidence",
+   "verified_at": "2026-09-20T11:51:31.603497+00:00",
+   "live_price": 4.45
+  },
   {
    "event": "Miami Dolphins @ San Francisco 49ers",
    "league": "NFL",
@@ -397,7 +429,7 @@
    "selection": "Miami Dolphins",
    "side": "away",
    "line": 7.5,
-   "book": "bwin",
+   "book": "BetMGM",
    "engine": "entain",
    "price": 2.85,
    "fair_pinnacle": 2.7822,
@@ -407,7 +439,7 @@
    "pinnacle_limit": 30000.0,
    "engines": 5,
    "disagreement_pct": 4.778,
-   "confidence": 88,
+   "confidence": 90,
    "confidence_tier": "high",
    "reasons": [
     "Pinnacle risks $30,000 on this market",
@@ -415,11 +447,11 @@
     "fair value built from 4 engines excluding this book",
     "engines broadly agree (4.8% spread)",
     "Pinnacle and consensus agree this price is +EV",
-    "price has held this level for 5614 minutes"
+    "price has held this level for 5562 minutes"
    ],
-   "stake": 14.49,
-   "stake_basis": "quarter Kelly on a 35.9% fair probability, scaled to 88% by confidence",
-   "verified_at": "2026-09-20T10:58:48.209861+00:00",
+   "stake": 14.82,
+   "stake_basis": "quarter Kelly on a 35.9% fair probability, scaled to 90% by confidence",
+   "verified_at": "2026-09-20T11:51:34.277752+00:00",
    "live_price": 2.85
   }
  ],
@@ -428,20 +460,20 @@
   "market": "spread",
   "selection": "Carolina Panthers",
   "line": 8.5,
-  "book": "bwin",
-  "price": 3.5,
-  "apparent_edge_pct": 183.15,
-  "confidence": 12,
+  "book": "BetMGM",
+  "price": 3.4,
+  "apparent_edge_pct": 175.06,
+  "confidence": 14,
   "warnings": [
-   "EV 183.1% vs consensus is implausibly high",
+   "EV 175.1% vs consensus is implausibly high",
    "only 2 independent engine(s) priced this line",
    "consensus rests on only 2 other engine(s) - thin"
   ]
  },
  "shopping": {
-  "markets": 2244,
-  "median_vs_median_pct": 2.5,
-  "median_vs_worst_pct": 4.959,
+  "markets": 2646,
+  "median_vs_median_pct": 2.651,
+  "median_vs_worst_pct": 5.263,
   "window_seconds": 1200,
   "examples": [
    {
@@ -492,7 +524,7 @@
  },
  "clv": {
   "graded": 4076.0,
-  "pending": 4896.0,
+  "pending": 4952.0,
   "avg_clv_pct": 2.057,
   "beat_the_close": 2319.0,
   "avg_clv_clean_rows": 2.647,
@@ -501,10 +533,10 @@
  },
  "lead_lag": {
   "published": [],
-  "tested": 20,
-  "unbiased_minutes": 13648.0,
-  "unavailable": false,
-  "unavailable_reason": null,
+  "tested": 0,
+  "unbiased_minutes": null,
+  "unavailable": true,
+  "unavailable_reason": "the lead/lag query exceeded its time budget on this database; the panel is omitted rather than shown as zero",
   "retractions": [
    {
     "claimed": "78.9% same-direction, 85s lag",
@@ -528,7 +560,7 @@
  ],
  "fulfilment": {
   "mode": "manual",
-  "last_poll_at": "2026-09-20T11:06:59.782560+00:00"
+  "last_poll_at": "2026-09-20T11:59:31.251400+00:00"
  },
  "pricing": {
   "bettor": {
